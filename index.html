@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AJAY KUMAR OJHA — 3D Artist & Visualizer</title>
+  <meta name="description" content="Portfolio of Ajay Kumar Ojha — 3D Artist with 10+ years of expertise in 3ds Max, Maya, AutoCAD, Lumion, D5 Render, architectural visualization, interior rendering, and exhibition design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-section="studio">
+
+  <!-- Creative Architectural Spatial Canvas & Drafting Grid Background -->
+  <div class="arch-backdrop" aria-hidden="true">
+    <canvas id="archCanvas" class="arch-canvas"></canvas>
+    <div class="arch-drafting-grid"></div>
+    <div class="arch-blueprint-marks">
+      <span class="arch-mark top-left">+ 00.00</span>
+      <span class="arch-mark top-right">SCALE 1:50</span>
+      <span class="arch-mark bottom-left">DATUM REF: AX-1</span>
+      <span class="arch-mark bottom-right">3D ARTIST · NEW DELHI</span>
+    </div>
+  </div>
+
+  <!-- Sticky Frosted Header -->
+  <header id="mainHeader">
+    <a href="#studio" class="brand" aria-label="Ajay Kumar Ojha Portfolio Home">
+      <b>Ajay Kumar Ojha</b>
+      <span>3D Artist & Visualizer</span>
+    </a>
+    
+    <nav id="navMenu" aria-label="Sections">
+      <a href="#studio" class="active">Profile</a>
+      <a href="#projects">Selected Works</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#journal">Experience</a>
+      <button id="contactToggle" class="nav-contact-btn">Contact</button>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Dark / Light Mode Switcher -->
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle Theme">
+        <svg id="themeIconSun" viewBox="0 0 24 24" style="display:none">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg id="themeIconMoon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Studio / Hero Section -->
+    <section id="studio">
+      <span class="lbl" style="display:block; margin-bottom:12px">Portfolio of Ajay Kumar Ojha</span>
+      <h1>Photorealistic 3D Art & Spatial Visualization.</h1>
+      
+      <p class="intro">
+        Highly creative and multitalented 3D Artist with over 10 years of professional experience across 
+        architectural visualization, luxury residential & commercial interiors, retail outlet store design, 
+        and large-scale exhibition environments.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="#projects">
+          Explore Works
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 13l5 5 5-5M12 4v14"/>
+          </svg>
+        </a>
+        <button class="btn-secondary" id="heroContactBtn" type="button">Get in Touch →</button>
+      </div>
+
+      <!-- Professional Career Metrics -->
+      <div class="studio-stats">
+        <div class="stat-card">
+          <div class="stat-num">10+</div>
+          <div class="stat-lbl">Years Industry Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3ds Max & Maya</div>
+          <div class="stat-lbl">Core 3D Software Mastery</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">D5 & Lumion</div>
+          <div class="stat-lbl">Real-Time 4K Walkthroughs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">New Delhi</div>
+          <div class="stat-lbl">Sarita Vihar, Delhi 110076</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects">
+      <div class="section-head">
+        <span class="lbl">Portfolio Archive</span>
+        <h2>Selected Works & Visualizations</h2>
+        <p class="section-desc">Curated 3D architectural renders, interior spaces, commercial retail concepts, and exhibition staging.</p>
+      </div>
+
+      <div class="tools-bar">
+        <div id="tabs" class="tabs-group" role="group" aria-label="Category Filter"></div>
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input id="q" class="search-input" type="search" placeholder="Search by title or software…" aria-label="Search projects">
+          <button id="qClear" class="search-clear" aria-label="Clear search" hidden>×</button>
+        </div>
+      </div>
+
+      <div id="grid" aria-live="polite"></div>
+      <p id="none" hidden>No matching projects found. Try searching for another keyword or category.</p>
+    </section>
+
+    <!-- Expertise Section (Redesigned completely according to Ajay's resume) -->
+    <section id="expertise">
+      <div class="section-head">
+        <span class="lbl">Resume & Competencies</span>
+        <h2>Expertise & Technical Skills</h2>
+        <p class="section-desc">Comprehensive mastery of 3D pipeline tools, photorealistic lighting, AutoCAD blueprints, and cinematic rendering.</p>
+      </div>
+
+      <div class="expertise-grid">
+        <!-- Software Proficiency Bars -->
+        <div class="skills-list" id="skills"></div>
+
+        <!-- Professional Disciplines from Resume -->
+        <div class="disciplines-column">
+          <div class="discipline-card">
+            <h4>3D Architectural & Interior Modeling</h4>
+            <p>High-precision poly modeling from 2D AutoCAD layouts and architectural blueprints into detailed residential, commercial, and retail store volumes using 3ds Max and Maya.</p>
+          </div>
+          <div class="discipline-card">
+            <h4>Photorealistic Lighting & PBR Shading</h4>
+            <p>Physical daylight calculations, IES artificial lighting, and tactile material shaders delivering lifelike realism for luxury interiors and exterior facades.</p>
+          </div>
+          <div class="discipline-card">
+            <h4>Walkthrough Animation & VFX</h4>
+            <p>Real-time architectural camera choreography, dynamic environmental animations, and cinematic 4K walkthroughs produced with D5 Render, Lumion, and MAAC VFX pipelines.</p>
+          </div>
+          <div class="discipline-card">
+            <h4>Exhibition & Event Staging</h4>
+            <p>End-to-end 3D spatial staging for immersive corporate exhibitions, experiential brand pavilions, and trade booths (currently at 4 Dimension Marcom Pvt Ltd).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Certifications Row from Resume -->
+      <div class="credentials-bar">
+        <div class="cred-item">
+          <span class="cred-title">Autodesk Max Pro & VFX Pro</span>
+          <span class="cred-sub">MAAC (Maya Academy of Advanced Cinematics), South Ex., New Delhi</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-title">Diploma in AutoCAD</span>
+          <span class="cred-sub">Professional Architectural Drafting Certification, New Delhi</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-title">Diploma in Graphic & 2D Animation</span>
+          <span class="cred-sub">Brainware Animation, Patna</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-title">Graduation in Art</span>
+          <span class="cred-sub">V.K.S University, Arrah (Bihar)</span>
+        </div>
+      </div>
+
+      <!-- Dedicated Resume Banner -->
+      <div class="resume-cta-banner">
+        <div>
+          <h3>Download Complete Professional CV</h3>
+          <p>Access the full PDF resume including detailed studio work history, software proficiencies, and contact information.</p>
+        </div>
+        <a href="assets/ajay_kumar_ojha_resume.pdf" target="_blank" rel="noopener" class="btn-primary">
+          View Resume (PDF)
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Work Experience & Career Timeline Section (Directly from Resume) -->
+    <section id="journal">
+      <div class="section-head">
+        <span class="lbl">Work Experience</span>
+        <h2>Professional Journey & Studio Roles</h2>
+        <p class="section-desc">10+ years of dedicated service across premier design ateliers, signage studios, and exhibition agencies.</p>
+      </div>
+      <div class="journal-timeline" id="loglist"></div>
+    </section>
+
+  </main>
+
+  <!-- Contact Overlay Panel (full-screen, triggered by Contact button) -->
+  <div id="contactPanel" class="contact-overlay" aria-hidden="true">
+    <div class="contact-overlay-backdrop"></div>
+    <div class="contact-overlay-content">
+      <div class="contact-overlay-header">
+        <div>
+          <span class="lbl">Inquiries & Collaboration</span>
+          <h2>Let's Connect</h2>
+          <p class="section-desc" style="margin-top:8px">Available for full-time 3D Artist positions, architectural visualisation commissions, and freelance design projects.</p>
+        </div>
+        <button class="contact-overlay-close" id="contactClose" aria-label="Close contact panel" title="Close (Esc)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="contact-overlay-body">
+        <div class="contact-layout">
+          <div class="contact-card">
+            <!-- Email Block with One-Click Copy -->
+            <div class="contact-detail">
+              <span class="lbl">Email Address</span>
+              <div class="contact-email-wrap">
+                <a href="mailto:ajaykumarojha16@gmail.com" class="contact-email" id="emailLink">ajaykumarojha16@gmail.com</a>
+                <button class="copy-btn" id="copyEmailBtn" title="Copy email to clipboard">Copy</button>
+              </div>
+              <small style="color:var(--text-muted); font-size:12px; display:block; margin-top:4px">Click above or use the form to write directly</small>
+            </div>
+
+            <!-- Phone Block -->
+            <div class="contact-detail">
+              <span class="lbl">Phone / WhatsApp</span>
+              <div style="margin-top:6px">
+                <a href="tel:+918802820881" class="contact-phone" id="phoneLink">+91-8802820881</a>
+              </div>
+            </div>
+
+            <!-- Location Block -->
+            <div class="contact-detail">
+              <span class="lbl">Location & Base</span>
+              <p style="margin:6px 0 0; color:var(--text); font-size:15px">
+                Sarita Vihar, New Delhi 110076 — Available for on-site roles in Delhi NCR and remote worldwide.
+              </p>
+            </div>
+
+            <!-- Resume PDF Link -->
+            <div class="contact-detail" style="margin-bottom:0">
+              <span class="lbl">Curriculum Vitae</span>
+              <div class="social-links" style="margin-top:8px">
+                <a class="lnk" href="assets/ajay_kumar_ojha_resume.pdf" target="_blank" rel="noopener">Official Resume PDF ↗</a>
+                <a class="lnk" id="behanceProfileLink" href="https://behance.net" target="_blank" rel="noopener">Behance Portfolio ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Direct Mailto Action -->
+          <form id="f">
+            <div class="form-field">
+              <label for="fn">Your Name *</label>
+              <input id="fn" name="name" placeholder="e.g. Rahul Sharma" aria-label="Your name" required>
+            </div>
+            <div class="form-field">
+              <label for="fe">Your Email Address *</label>
+              <input id="fe" name="email" type="email" placeholder="e.g. rahul@company.com" aria-label="Your email" required>
+            </div>
+            <div class="form-field">
+              <label for="fp">Contact Phone (Optional)</label>
+              <input id="fp" name="phone" type="tel" placeholder="e.g. +91 98765 43210" aria-label="Phone number">
+            </div>
+            <div class="form-field">
+              <label for="fm">Project Requirements & Timeline *</label>
+              <textarea id="fm" name="message" rows="4" placeholder="Tell Ajay about your 3D modeling, rendering, or animation requirements…" aria-label="Message" required></textarea>
+            </div>
+            <button class="btn-primary" type="submit" style="align-self: flex-start; margin-top:6px">
+              Send Message to Ajay
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Footer -->
+  <footer>
+    <div class="footer-studio-info">
+      <span>© 2026 AJAY KUMAR OJHA</span>
+      <span>·</span>
+      <span>3D ARTIST & VISUALIZER</span>
+      <span>·</span>
+      <span class="live-clock" id="studioClock">Studio Time: 10:00 PM IST</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:24px">
+      <a href="assets/ajay_kumar_ojha_resume.pdf" target="_blank" rel="noopener" class="lnk">Resume PDF ↗</a>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        Back to top ↑
+      </button>
+    </div>
+  </footer>
+
+  <!-- Exhibition Gallery Lightbox Modal -->
+  <dialog id="dlg" aria-labelledby="dt">
+    <div class="dh">
+      <div class="dh-left">
+        <h3 id="dt">Project Title</h3>
+        <span class="lbl" id="modalCatBadge"></span>
+      </div>
+      <button class="close-modal-btn" id="x" aria-label="Close dialog" title="Close (Esc)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="db">
+      <div class="gal-container">
+        <div class="gal" id="gal"></div>
+        <div class="gal-progress">
+          <div class="gal-progress-bar" id="galProgress"></div>
+        </div>
+      </div>
+
+      <div class="gc">
+        <div class="gc-controls">
+          <button class="gal-btn" id="pv" aria-label="Previous image">← Prev</button>
+          <button class="gal-btn" id="nx" aria-label="Next image">Next →</button>
+          <button class="gal-btn" id="pz" aria-label="Pause slideshow">Pause</button>
+          <a class="gal-btn" id="dlBtn" download title="Download full resolution image" href="#">Download ↓</a>
+          <button class="gal-btn" id="fsBtn" aria-label="View Fullscreen" title="View image in full screen" type="button">Fullscreen ⛶</button>
+        </div>
+        <span class="lbl" id="cnt">01 / 12</span>
+      </div>
+
+      <div class="cols">
+        <div>
+          <h4>Project Scope</h4>
+          <p id="pr"></p>
+        </div>
+        <div>
+          <h4>3D Approach</h4>
+          <p id="ar"></p>
+        </div>
+        <div>
+          <h4>Software & Output</h4>
+          <p id="me"></p>
+          <p id="stack" style="margin-top:10px; font-weight:400; color:var(--text)"></p>
+        </div>
+      </div>
+
+      <div class="modal-actions" id="lk">
+        <a class="lnk" id="lv" target="_blank" rel="noopener">Interactive Walkthrough ↗</a>
+        <a class="lnk" id="gh" target="_blank" rel="noopener">Behance Project Case Study ↗</a>
+        <button class="btn-primary" id="inquireProjectBtn" style="margin-left:auto">Inquire About Similar 3D Work →</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Notification Toast -->
+  <div class="toast-msg" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
