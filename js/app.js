@@ -572,7 +572,7 @@
   // 6. Category Tabs & Project Rendering (Clean, NO Hover Pill)
   // --------------------------------------------------------------------------
   var currentCat = "All";
-  var cats = ["All", "Residential", "Commercial", "Concept"];
+  var cats = ["All", "Residential", "Commercial", "Events"];
 
   var tabsContainer = $("#tabs");
   if (tabsContainer) {
@@ -689,7 +689,11 @@
     isPaused = false;
 
     var pzBtn = $("#pz");
-    if (pzBtn) pzBtn.textContent = "Pause";
+    if (pzBtn) {
+      pzBtn.innerHTML = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+      pzBtn.title = "Pause slideshow (Space)";
+      pzBtn.setAttribute("aria-label", "Pause slideshow");
+    }
 
     $("#dt").textContent = currentProject.title;
     var modalBadge = $("#modalCatBadge");
@@ -784,12 +788,19 @@
   var closeBtn = $("#x");
   var fsBtn = $("#fsBtn");
 
+  var ICON_PAUSE = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+  var ICON_PLAY = '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>';
+  var ICON_FS_ENTER = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>';
+  var ICON_FS_EXIT = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6m10-10h-6V4m0 6 7-7M3 21l7-7"></path></svg>';
+
   if (nextBtn) nextBtn.onclick = function () { showSlide(currentSlide + 1); };
   if (prevBtn) prevBtn.onclick = function () { showSlide(currentSlide - 1); };
   if (pauseBtn) {
     pauseBtn.onclick = function () {
       isPaused = !isPaused;
-      this.textContent = isPaused ? "Play" : "Pause";
+      this.innerHTML = isPaused ? ICON_PLAY : ICON_PAUSE;
+      this.title = isPaused ? "Play slideshow (Space)" : "Pause slideshow (Space)";
+      this.setAttribute("aria-label", isPaused ? "Play slideshow" : "Pause slideshow");
     };
   }
   if (fsBtn) {
@@ -811,6 +822,16 @@
       }
     };
   }
+
+  document.addEventListener("fullscreenchange", function () {
+    if (fsBtn) {
+      var isFS = !!document.fullscreenElement;
+      fsBtn.innerHTML = isFS ? ICON_FS_EXIT : ICON_FS_ENTER;
+      fsBtn.title = isFS ? "Exit Fullscreen (Esc)" : "View image in full screen";
+      fsBtn.setAttribute("aria-label", isFS ? "Exit Fullscreen" : "View image in full screen");
+    }
+  });
+
   if (closeBtn) {
     closeBtn.onclick = function () {
       if (document.fullscreenElement) {

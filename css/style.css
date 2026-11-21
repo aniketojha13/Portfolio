@@ -1346,24 +1346,29 @@ dialog::backdrop {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
   border: 1px solid var(--line);
   background: var(--surface-card);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   color: var(--text);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease;
+  flex-shrink: 0;
 }
 .gal-btn:hover {
   background: var(--text);
   color: var(--bg);
   border-color: var(--text);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.gal-btn svg {
+  width: 17px;
+  height: 17px;
+  display: block;
 }
 
 .cols {
@@ -1701,10 +1706,14 @@ footer {
     width: 100%;
   }
   .gal-btn {
-    padding: 6px 11px;
-    font-size: 10px;
-    letter-spacing: 0.08em;
-    min-height: 34px;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    min-height: unset;
+  }
+  .gal-btn svg {
+    width: 15px;
+    height: 15px;
   }
   .cols {
     grid-template-columns: 1fr;

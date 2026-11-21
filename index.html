@@ -346,11 +346,36 @@
 
       <div class="gc">
         <div class="gc-controls">
-          <button class="gal-btn" id="pv" aria-label="Previous image">← Prev</button>
-          <button class="gal-btn" id="nx" aria-label="Next image">Next →</button>
-          <button class="gal-btn" id="pz" aria-label="Pause slideshow">Pause</button>
-          <a class="gal-btn" id="dlBtn" download title="Download full resolution image" href="#">Download ↓</a>
-          <button class="gal-btn" id="fsBtn" aria-label="View Fullscreen" title="View image in full screen" type="button">Fullscreen ⛶</button>
+          <button class="gal-btn" id="pv" aria-label="Previous image" title="Previous (←)">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          <button class="gal-btn" id="nx" aria-label="Next image" title="Next (→)">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <button class="gal-btn" id="pz" aria-label="Pause slideshow" title="Pause slideshow (Space)">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </button>
+          <a class="gal-btn" id="dlBtn" download title="Download full resolution image" href="#" aria-label="Download image">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+          <button class="gal-btn" id="fsBtn" aria-label="View Fullscreen" title="View image in full screen" type="button">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+            </svg>
+          </button>
         </div>
         <span class="lbl" id="cnt">01 / 12</span>
       </div>
