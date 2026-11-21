@@ -460,18 +460,25 @@
   var menuToggle = $("#menuToggle");
   var navMenu = $("#navMenu");
 
+  function closeMobileNav() {
+    if (!navMenu) return;
+    navMenu.classList.remove("mobile-open");
+    if (menuToggle) menuToggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("mobile-nav-open");
+  }
+
   if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", function (e) {
       e.stopPropagation();
       var isOpen = navMenu.classList.toggle("mobile-open");
       menuToggle.setAttribute("aria-expanded", isOpen);
+      document.body.classList.toggle("mobile-nav-open", isOpen);
     });
 
     // Close when tapping any link or button inside nav menu
     navMenu.addEventListener("click", function (e) {
       if (e.target.closest("a") || e.target.closest("button")) {
-        navMenu.classList.remove("mobile-open");
-        menuToggle.setAttribute("aria-expanded", "false");
+        closeMobileNav();
       }
     });
 
@@ -479,9 +486,22 @@
     document.addEventListener("click", function (e) {
       if (navMenu.classList.contains("mobile-open")) {
         if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-          navMenu.classList.remove("mobile-open");
-          menuToggle.setAttribute("aria-expanded", "false");
+          closeMobileNav();
         }
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && navMenu.classList.contains("mobile-open")) {
+        closeMobileNav();
+      }
+    });
+
+    // Auto-close if resized to desktop layout
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 880 && navMenu.classList.contains("mobile-open")) {
+        closeMobileNav();
       }
     });
   }
@@ -732,6 +752,7 @@
 
     showSlide(0);
     dlg.showModal();
+    document.body.classList.add("modal-open");
     startSlideshow();
   }
 
@@ -842,10 +863,40 @@
   }
 
   if (dlg) {
-    dlg.addEventListener("close", stopSlideshow);
+    dlg.addEventListener("close", function () {
+      stopSlideshow();
+      document.body.classList.remove("modal-open");
+    });
     dlg.addEventListener("click", function (e) {
       if (e.target === this) this.close();
     });
+  }
+
+  // Mobile touch swipe gestures for lightbox gallery
+  var touchStartX = 0;
+  var touchStartY = 0;
+  var galElem = $("#gal");
+  if (galElem) {
+    galElem.addEventListener("touchstart", function (e) {
+      if (e.touches && e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      }
+    }, { passive: true });
+
+    galElem.addEventListener("touchend", function (e) {
+      if (e.changedTouches && e.changedTouches.length === 1) {
+        var dx = e.changedTouches[0].clientX - touchStartX;
+        var dy = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(dx) > 35 && Math.abs(dx) > Math.abs(dy)) {
+          if (dx < 0) {
+            showSlide(currentSlide + 1);
+          } else {
+            showSlide(currentSlide - 1);
+          }
+        }
+      }
+    }, { passive: true });
   }
 
   document.addEventListener("keydown", function (e) {
