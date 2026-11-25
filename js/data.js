@@ -84,7 +84,7 @@ var P = [
   },
 {
     title: "Hitachi — Customer Family Meet",
-    cat: "Other",
+    cat: "Events",
     slug: "hitachi-customer-family-meet",
     imagesCount: 5,
     mat: "Printed backdrop panels, stage truss, LED screen, fabric drapes, floral arrangements",
@@ -140,7 +140,7 @@ var P = [
   },
 {
     title: "Noida Haat — Cultural Venue Design",
-    cat: "Other",
+    cat: "Events",
     slug: "noida-haat",
     imagesCount: 10,
     mat: "Bamboo structures, fabric canopies, terracotta tiles, LED festoon lights, timber kiosks",
@@ -154,7 +154,7 @@ var P = [
   },
 {
     title: "Pahari Goat — Restaurant Concept",
-    cat: "Other",
+    cat: "Events",
     slug: "pahari-goat",
     imagesCount: 5,
     mat: "Rustic stone cladding, timber framework, corrugated metal accents, rope lighting, terracotta",
