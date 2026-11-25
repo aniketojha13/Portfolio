@@ -1123,7 +1123,7 @@ h1 {
 .contact-overlay {
   position: fixed;
   inset: 0;
-  z-index: 200;
+  z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2410,49 +2410,110 @@ footer {
     margin-left: 0 !important;
   }
 
-  /* Contact Modal Mobile */
+  /* Contact Modal Mobile (Refined, Compact, Proportional) */
   .contact-overlay {
     padding: 10px;
+    z-index: 2000;
   }
   .contact-overlay-content {
     width: 100%;
-    max-height: 94vh;
-    border-radius: var(--radius-md);
+    max-height: 94dvh;
+    border-radius: var(--radius-lg);
   }
   .contact-overlay-header {
-    padding: 18px 16px 14px;
-    gap: 12px;
+    padding: 14px 16px 12px;
+    gap: 10px;
   }
   .contact-overlay-header h2 {
-    font-size: 22px;
+    font-size: 19px;
+    line-height: 1.15;
+    margin: 2px 0 0;
+  }
+  .contact-overlay-header .lbl {
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
   }
   .contact-overlay-header .section-desc {
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 3px;
+  }
+  .contact-overlay-close {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+  .contact-overlay-close svg {
+    width: 18px;
+    height: 18px;
   }
   .contact-overlay-body {
-    padding: 16px 16px 24px;
+    padding: 12px 14px 20px;
+  }
+  .contact-layout {
+    gap: 14px;
   }
   .contact-card {
-    padding: 18px;
-    gap: 16px;
+    padding: 14px 14px;
+    gap: 12px;
+  }
+  .contact-detail .lbl {
+    font-size: 9.5px;
+    letter-spacing: 0.14em;
+    margin-bottom: 3px;
+  }
+  .contact-email-wrap {
+    gap: 8px;
+    margin-top: 2px;
   }
   .contact-email {
-    font-size: 16px;
+    font-size: 14px;
     word-break: break-all;
+    font-family: var(--font-sans);
+    font-weight: 500;
   }
   .contact-phone {
-    font-size: 18px;
+    font-size: 15px;
+    font-family: var(--font-sans);
+    font-weight: 500;
+  }
+  .copy-btn {
+    padding: 3px 8px;
+    font-size: 9px;
+  }
+  .social-links {
+    gap: 10px;
+    margin-top: 4px;
+  }
+  .social-links .lnk {
+    font-size: 11.5px;
+  }
+  #f {
+    gap: 10px;
+  }
+  .form-field {
+    gap: 3px;
+  }
+  .form-field label {
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
   }
   .form-field input,
   .form-field textarea {
-    font-size: 16px !important; /* Prevents iOS auto-zoom */
-    padding: 12px 14px;
-    min-height: 46px;
+    font-size: 14px !important;
+    padding: 9px 12px;
+    min-height: 38px;
+    border-radius: var(--radius-sm);
+  }
+  #fm {
+    min-height: 60px;
   }
   #f button[type="submit"] {
     width: 100%;
     justify-content: center;
-    min-height: 48px;
+    min-height: 42px;
+    font-size: 12px;
+    margin-top: 4px;
   }
 
   /* Footer Mobile */
