@@ -7,7 +7,7 @@ var LOCATION = "Sarita Vihar, New Delhi 110076";
 var RESUME_PDF = "assets/ajay_kumar_ojha_resume.pdf";
 var EXT = "jpg"; // image type: jpg, png or webp (lowercase, must match your files)
 var BEHANCE = "https://behance.net"; // your Behance profile URL (used when a project has no own link)
-var WEB3FORMS_KEY = "30d6000f-8052-492e-9921-cc05a0f0aaf8";
+var WEB3FORMS_KEY = "6b4ea8d0-c469-4b4b-815c-520aefcf90cb";
 
 // Projects Archive — Featuring Ajay's Real 3D Visualisation Works
 var P = [
@@ -467,34 +467,7 @@ var P = [
     live: "",
     behance: ""
   },
-{
-    title: "Boutique Hotel Lobby",
-    cat: "Commercial",
-    slug: "boutique-hotel-lobby",
-    imagesCount: 1,
-    mat: "Arabescato marble, fluted walnut, patinated bronze, bouclé",
-    problem: "Balancing monumental grandeur with intimate hospitality checkpoints for an independent heritage boutique hotel.",
-    arch: "A sequence of arched portals frames axial vistas toward an interior courtyard garden. Bespoke bronze lighting fixtures cast soft downward pools of light.",
-    metrics: "Autodesk 3ds Max · V-Ray · Custom FF&E Modeling",
-    year: "2023",
-    location: "New Delhi",
-    live: "",
-    behance: ""
-  },
-{
-    title: "Wellness Spa Sanctuary",
-    cat: "Commercial",
-    slug: "wellness-spa",
-    imagesCount: 1,
-    mat: "Warm limewash, reclaimed teak, river stone, water features",
-    problem: "Crafting a sensory subterranean sanctuary dedicated to holistic hydrotherapy and meditative mindfulness.",
-    arch: "Indirect perimeter coves wash textured limewash walls with 2400K candlelight warmth. Deep teak stepping stones cross shallow reflection pools leading into private treatment chambers.",
-    metrics: "3ds Max · Lumion · Lighting Simulation · Acoustic Zoning",
-    year: "2023",
-    location: "Commercial Project",
-    live: "",
-    behance: ""
-  },
+
   {
     title: "Pfeiffer House — Commercial Architecture & Facade",
     cat: "Residential",
@@ -611,34 +584,7 @@ var P = [
   },
 
   // ── 4. Other & Concept Design Studies ──
-{
-    title: "Japandi Bedroom Concept",
-    cat: "Other",
-    slug: "japandi-bedroom-concept",
-    imagesCount: 1,
-    mat: "Blonde ash, Washi paper, tatami mats, brushed wool",
-    problem: "Synthesising Scandinavian functional minimalism with the Japanese philosophy of Wabi-sabi in a sleep retreat.",
-    arch: "Low-profile platform bed floating above woven tatami, accompanied by custom floor-to-ceiling sliding Washi screen partitions that softly filter morning rays.",
-    metrics: "Autodesk Maya · 3ds Max · D5 Render · 16-bit Shaders",
-    year: "2025",
-    location: "Concept Study",
-    live: "",
-    behance: ""
-  },
-{
-    title: "Reading Room Alcove",
-    cat: "Other",
-    slug: "reading-room-concept",
-    imagesCount: 1,
-    mat: "American walnut, cognac saddle leather, unlacquered brass, mohair",
-    problem: "An introspective private study designed for bibliophiles, with integrated book stacks and acoustically dampened reading niches.",
-    arch: "Full-height walnut library shelving with concealed LED edge illumination, ergonomic fireside lounge chair, and sound-absorbing acoustic felt wall panels.",
-    metrics: "3ds Max · Lumion · Photometric IES Lighting",
-    year: "2024",
-    location: "Concept Study",
-    live: "",
-    behance: ""
-  }
+
 ];
 
 // Expertise based on Ajay Kumar Ojha's Resume:
