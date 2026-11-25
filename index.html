@@ -26,46 +26,141 @@
 
   <!-- Sticky Frosted Header -->
   <header id="mainHeader">
-    <a href="#studio" class="brand" aria-label="Ajay Kumar Ojha Portfolio Home">
-      <b>Ajay Kumar Ojha</b>
-      <span>3D Artist & Visualizer</span>
-    </a>
-    
-    <nav id="navMenu" aria-label="Sections">
-      <a href="#studio" class="active">Profile</a>
-      <a href="#projects">Selected Works</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#journal">Experience</a>
-      <button id="contactToggle" class="nav-contact-btn">Contact</button>
-    </nav>
+    <div class="header-inner">
+      <!-- Studio Brand & Geometric 3D Emblem -->
+      <a href="#studio" class="brand" aria-label="Ajay Kumar Ojha — 3D Artist & Visualizer">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg class="emblem-svg" viewBox="0 0 40 40" fill="none">
+            <!-- Isometric Cube Faces -->
+            <polygon class="cube-face top" points="20,4 35,12.5 20,21 5,12.5" />
+            <polygon class="cube-face left" points="5,12.5 20,21 20,36 5,27.5" />
+            <polygon class="cube-face right" points="20,21 35,12.5 35,27.5 20,36" />
+            <!-- Golden Central Node -->
+            <circle class="cube-node" cx="20" cy="21" r="2.2" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Ajay Kumar Ojha</span>
+          <div class="brand-sub">
+            <span class="brand-role">3D Artist & Visualizer</span>
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-status"><span class="status-pulse"></span>Available for Projects</span>
+          </div>
+        </div>
+      </a>
+      
+      <!-- Primary Navigation (Desktop Bar + Mobile Luxury Drawer) -->
+      <nav id="navMenu" aria-label="Primary Navigation">
+        <!-- Mobile Drawer Top Banner (Mobile Only) -->
+        <div class="mobile-drawer-top" aria-hidden="true">
+          <div class="m-drawer-badge">
+            <span class="status-pulse"></span>
+            <span>Studio Directory · New Delhi</span>
+          </div>
+          <span class="m-drawer-hint">Index // 2026</span>
+        </div>
 
-    <div class="header-actions">
-      <!-- Dark / Light Mode Switcher -->
-      <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle Theme">
-        <svg id="themeIconSun" viewBox="0 0 24 24" style="display:none">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg id="themeIconMoon" viewBox="0 0 24 24">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      </button>
+        <!-- Navigation Links -->
+        <div class="nav-links-wrap">
+          <a href="#studio" class="nav-item active">
+            <span class="nav-idx">01</span>
+            <span class="nav-title">Profile</span>
+            <span class="nav-desc">Studio Philosophy & Background</span>
+            <svg class="nav-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#projects" class="nav-item">
+            <span class="nav-idx">02</span>
+            <span class="nav-title">Selected Works</span>
+            <span class="nav-desc">Events, Commercial & Residential</span>
+            <svg class="nav-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#expertise" class="nav-item">
+            <span class="nav-idx">03</span>
+            <span class="nav-title">Expertise</span>
+            <span class="nav-desc">3ds Max, V-Ray, Maya & Lumion</span>
+            <svg class="nav-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#journal" class="nav-item">
+            <span class="nav-idx">04</span>
+            <span class="nav-title">Experience</span>
+            <span class="nav-desc">10+ Years Professional Journey</span>
+            <svg class="nav-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button id="contactToggle" class="nav-item nav-contact-btn" type="button">
+            <span class="nav-idx">05</span>
+            <span class="nav-title">Contact</span>
+            <span class="nav-desc">Start a Project Consultation</span>
+            <svg class="nav-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
 
-      <!-- Mobile Menu Toggle Button -->
-      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
+        <!-- Mobile Drawer Action Buttons (Mobile Only) -->
+        <div class="mobile-drawer-actions">
+          <button id="mobileDrawerContact" class="drawer-btn-primary" type="button">
+            <span>Start a Project Consultation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </button>
+          <a href="assets/ajay_kumar_ojha_resume.pdf" target="_blank" rel="noopener" class="drawer-btn-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <span>Download Resume (PDF)</span>
+          </a>
+        </div>
+
+        <!-- Mobile Drawer Quick Studio Details (Mobile Only) -->
+        <div class="mobile-drawer-footer">
+          <div class="drawer-contact-col">
+            <span class="d-label">Direct Email</span>
+            <a href="mailto:ajaykumarojha16@gmail.com" class="d-val">ajaykumarojha16@gmail.com</a>
+          </div>
+          <div class="drawer-contact-col">
+            <span class="d-label">Phone / WhatsApp</span>
+            <a href="tel:+918802820881" class="d-val">+91-8802820881</a>
+          </div>
+          <div class="drawer-contact-col">
+            <span class="d-label">Studio Base</span>
+            <span class="d-val">Sarita Vihar, New Delhi</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Header Actions (Desktop CTA, Theme Toggle, Mobile Hamburger) -->
+      <div class="header-actions">
+        <!-- Prominent Desktop "Let's Talk" CTA Button -->
+        <button id="headerCtaBtn" class="header-cta" type="button" aria-label="Open contact form">
+          <span class="cta-dot"></span>
+          <span>Let's Talk</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </button>
+
+        <!-- Dark / Light Mode Switcher -->
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle Theme">
+          <svg id="themeIconSun" viewBox="0 0 24 24" style="display:none">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Animated Mobile Hamburger Button -->
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="burger-lines" aria-hidden="true">
+            <span class="b-line b-top"></span>
+            <span class="b-line b-mid"></span>
+            <span class="b-line b-bot"></span>
+          </span>
+        </button>
+      </div>
     </div>
   </header>
 

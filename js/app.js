@@ -507,6 +507,18 @@
   }
 
   // --------------------------------------------------------------------------
+  // 4B. Header Elevation on Scroll
+  // --------------------------------------------------------------------------
+  var mainHeader = $("#mainHeader");
+  function updateHeaderScroll() {
+    if (!mainHeader) return;
+    var isScrolled = window.pageYOffset > 20;
+    mainHeader.classList.toggle("scrolled", isScrolled);
+  }
+  window.addEventListener("scroll", updateHeaderScroll, { passive: true });
+  updateHeaderScroll();
+
+  // --------------------------------------------------------------------------
   // 5. High-End Editorial Architectural Artwork Fallbacks (Clean & Minimal)
   // --------------------------------------------------------------------------
   var ARCH_PALETTES = [
@@ -1180,6 +1192,23 @@ if (contactForm) {
   var heroContactBtn = $("#heroContactBtn");
   if (heroContactBtn) {
     heroContactBtn.addEventListener("click", function () {
+      openContactPanel();
+    });
+  }
+
+  // Header Desktop "Let's Talk" CTA
+  var headerCtaBtn = $("#headerCtaBtn");
+  if (headerCtaBtn) {
+    headerCtaBtn.addEventListener("click", function () {
+      openContactPanel();
+    });
+  }
+
+  // Mobile Drawer "Start a Project Consultation" CTA
+  var mobileDrawerContact = $("#mobileDrawerContact");
+  if (mobileDrawerContact) {
+    mobileDrawerContact.addEventListener("click", function () {
+      closeMobileNav();
       openContactPanel();
     });
   }
