@@ -592,7 +592,7 @@
   // 6. Category Tabs & Project Rendering (Clean, NO Hover Pill)
   // --------------------------------------------------------------------------
   var currentCat = "All";
-  var cats = ["All", "Residential", "Commercial", "Events"];
+  var cats = ["All", "Events", "Commercial", "Residential", "Other"];
 
   var tabsContainer = $("#tabs");
   if (tabsContainer) {
@@ -633,7 +633,7 @@
   function renderProjects() {
     var query = (searchInput ? searchInput.value : "").trim().toLowerCase();
     var list = P.filter(function (p) {
-      var matchesCategory = currentCat === "All" || p.cat === currentCat;
+      var matchesCategory = currentCat === "All" || p.cat === currentCat || (currentCat === "Other" && (p.cat === "Other" || p.cat === "Concept"));
       var textContent = (p.title + " " + p.mat + " " + (p.problem || "") + " " + (p.arch || "")).toLowerCase();
       var matchesSearch = query === "" || textContent.indexOf(query) > -1;
       return matchesCategory && matchesSearch;

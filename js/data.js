@@ -11,360 +11,8 @@ var WEB3FORMS_KEY = "30d6000f-8052-492e-9921-cc05a0f0aaf8";
 
 // Projects Archive — Featuring Ajay's Real 3D Visualisation Works
 var P = [
-  {
-    title: "Karim's Restaurant — Kolkata",
-    cat: "Commercial",
-    slug: "karim-kolkata",
-    imagesCount: 7,
-    mat: "Smoked walnut, brass fretwork, fluted columns, velvet upholstery, heritage archways",
-    problem: "High-end 3D architectural and interior visualization for the historic Mughal cuisine brand in Kolkata, requiring regal grandeur paired with high-volume hospitality flow.",
-    arch: "Heritage arched ceiling portals, custom illuminated brass chandeliers, ambient cove illumination, and grand exterior storefront facade designed for visual impact.",
-    metrics: "Autodesk 3ds Max · V-Ray · Adobe Photoshop · 1920×1080 Widescreen",
-    year: "2023",
-    location: "Kolkata, India",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Pind Balluchi Restaurant",
-    cat: "Commercial",
-    slug: "pind-baluchi",
-    imagesCount: 8,
-    mat: "Carved teak, exposed brick, mud plaster finish, wrought iron, copper vessels",
-    problem: "Reimagining the rustic heritage village dining aesthetic into an immersive, atmospheric restaurant & bar dining space.",
-    arch: "Handcrafted timber ceiling pergolas, traditional terracotta pottery alcoves, carved wood entrance doorway, and layered 2400K warm atmospheric lighting.",
-    metrics: "Autodesk 3ds Max · AutoCAD · Lumion · 1920×1080 Widescreen",
-    year: "2023",
-    location: "Delhi NCR",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Smart Dukan Retail Chain",
-    cat: "Commercial",
-    slug: "smart-dukan",
-    imagesCount: 9,
-    mat: "Acrylic solid surface, powder-coated steel, glass showcases, LED lightboxes, ACP exterior",
-    problem: "Standardized modern retail outlet store concept engineered for multi-location rollout across Delhi NCR.",
-    arch: "High-visibility retail showroom layout with central demo counters, perimeter branded display bays, and striking exterior facade with illuminated 3D signage.",
-    metrics: "Autodesk 3ds Max · AutoCAD · CorelDraw · Delhi Signage",
-    year: "2020",
-    location: "Delhi NCR",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Aristocrat Technologies — Candor TechSpace",
-    cat: "Commercial",
-    slug: "aristocrat-candor-techspace",
-    imagesCount: 19,
-    mat: "Acoustic ceiling baffles, fluted glass partitions, terrazzo flooring, warm oak wall panelling, linear LED profiles",
-    problem: "Corporate workplace and technology center 3D visualization for Aristocrat Technologies at Candor TechSpace, Sector 135 Noida, balancing open-plan engineering desks with agile breakout hubs.",
-    arch: "Dynamic curved circulation spine connecting modern reception, collaboration pods, high-spec meeting suites, and ergonomic sit-stand workstations bathed in diffused circadian lighting.",
-    metrics: "Autodesk 3ds Max · AutoCAD · V-Ray · Commercial Office Layout",
-    year: "2024",
-    location: "Candor TechSpace, Noida Sector 135",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "AVL India — Tech Center, Gurugram",
-    cat: "Commercial",
-    slug: "avl-india-gurugram",
-    imagesCount: 7,
-    mat: "Industrial metal mesh, acoustic wall panels, engineered timber, high-performance commercial carpet tiles, recessed spotlights",
-    problem: "High-tech corporate office and engineering facility visualization for AVL India Software in Udyog Vihar, Gurugram, creating an inspiring hub for automotive powertrain and simulation engineers.",
-    arch: "Automotive-inspired geometric ceiling rafts, private glass-fronted executive cabins, and collaborative scrum spaces featuring corporate brand identity and precision accent lighting.",
-    metrics: "Autodesk 3ds Max · V-Ray · AutoCAD · Workplace Planning",
-    year: "2024",
-    location: "Udyog Vihar, Gurugram",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Galgotias University — Campus & Interior Architecture",
-    cat: "Commercial",
-    slug: "galgotias-university",
-    imagesCount: 9,
-    mat: "Polished Italian marble, acoustic timber slats, tempered structural glass, architectural bronze, stretch ceiling systems",
-    problem: "Grand institutional and administrative interior visualization for Galgotias University campus, blending academic prestige with state-of-the-art educational and executive facilities.",
-    arch: "Soaring double-height entrance lobby with monumental columns, acoustic lecture auditoriums, digital library pods, and dignified faculty conference suites.",
-    metrics: "Autodesk 3ds Max · V-Ray · Lumion · Institutional Design",
-    year: "2023",
-    location: "Greater Noida, Uttar Pradesh",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Galaxy IT Park — Executive Fitness Center",
-    cat: "Commercial",
-    slug: "galaxy-it-park-gym",
-    imagesCount: 5,
-    mat: "Shock-absorbing rubber sports flooring, black powder-coated steel trusses, neon LED accent lighting, full-height mirror walls, exposed concrete",
-    problem: "Design a high-energy, premium corporate fitness club and wellness facility located on the ground floor of Tower C, Galaxy IT Park in Noida.",
-    arch: "Zoned cardiovascular, strength training, and functional CrossFit turf areas framed by industrial exposed ceilings, motivational LED graphics, and recessed cove illumination.",
-    metrics: "Autodesk 3ds Max · V-Ray · Photoshop · Gym & Wellness Interior",
-    year: "2024",
-    location: "Galaxy IT Park, Noida",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Indus — Corporate Headquarters, Gurugram",
-    cat: "Commercial",
-    slug: "indus-gurugram",
-    imagesCount: 15,
-    mat: "Micro-perforated acoustic timber, brushed brass signage, Statuario marble reception desk, ergonomic modular workstations, LED linear suspensions",
-    problem: "Comprehensive corporate office interior visualization in Gurugram, delivering a sophisticated environment for executive leadership, client negotiations, and collaborative project teams.",
-    arch: "A striking sculptural reception atrium leads to central collaborative town hall steps, quiet focus pods, executive boardroom suites with telepresence AV, and vibrant employee refreshment lounges.",
-    metrics: "Autodesk 3ds Max · V-Ray · AutoCAD · Space Planning",
-    year: "2024",
-    location: "Gurugram, Haryana",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "INOXPA India — Corporate Facility, Pune",
-    cat: "Commercial",
-    slug: "inoxpa-pune",
-    imagesCount: 7,
-    mat: "Brushed stainless steel finishes, epoxy industrial floor coatings, glass partitions, corporate blue accents, acoustic ceiling baffles",
-    problem: "Corporate headquarters and industrial experience center for INOXPA India in Pune, showcasing specialized fluid-handling equipment and modern management offices.",
-    arch: "Sleek industrial-modernist aesthetic incorporating stainless steel accents mirroring the brand's products, glass-walled conference rooms with clear sightlines into demonstration zones, and crisp architectural illumination.",
-    metrics: "Autodesk 3ds Max · V-Ray · Industrial Facility Design",
-    year: "2023",
-    location: "Pune, Maharashtra",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "ISGEC Heavy Engineering — Corporate Office, Noida",
-    cat: "Commercial",
-    slug: "isgec-noida",
-    imagesCount: 14,
-    mat: "Smoked teak panelling, Travertine stone wall cladding, double-glazed acoustic glass, textured wall coverings, architectural downlights",
-    problem: "Interior visualization for ISGEC Heavy Engineering's major corporate office in Noida, projecting industrial strength, corporate heritage, and forward-looking engineering excellence.",
-    arch: "Stately reception lounge with backlit logo feature wall, expansive boardrooms with motorized AV systems, ergonomic departmental floors, and luxurious private director chambers.",
-    metrics: "Autodesk 3ds Max · V-Ray · Photoshop · Corporate Headquarters",
-    year: "2024",
-    location: "Noida, Uttar Pradesh",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Juniper Networks — Tech Office, Gurugram",
-    cat: "Commercial",
-    slug: "juniper-networks-gurugram",
-    imagesCount: 5,
-    mat: "Hexagonal acoustic wall tiles, biophilic moss walls, warm ash timber, polished screed flooring, colour-tunable smart LED luminaires",
-    problem: "Next-generation agile tech workplace design for Juniper Networks in Gurugram, optimized for high connectivity, collaboration, and employee wellbeing.",
-    arch: "Biophilic open-plan floorplate integrating living plant walls, flexible huddle hubs with writable glass, network operation demonstration booths, and sound-insulated phone booths.",
-    metrics: "Autodesk 3ds Max · V-Ray · Biophilic Workplace Visualization",
-    year: "2024",
-    location: "Gurugram, Haryana",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Luminous Power Technologies — Experience Center & Office",
-    cat: "Commercial",
-    slug: "luminous-commercial",
-    imagesCount: 9,
-    mat: "Backlit acrylic panels, corporate blue and solar yellow accents, high-gloss display pedestals, modular presentation walls, polished vitrified tiles",
-    problem: "Brand experience showroom and executive office space for Luminous Power Technologies, displaying next-gen solar, inverter, and energy storage innovations.",
-    arch: "Interactive product display islands with halo edge-lighting, brand story video wall, comfortable client consultation suites, and energetic modern open workstation zones.",
-    metrics: "3ds Max · V-Ray · Retail & Office Visualization",
-    year: "2023",
-    location: "Delhi NCR",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Pernod Ricard — Regional Office, Hyderabad",
-    cat: "Commercial",
-    slug: "pernod-ricard-hyderabad",
-    imagesCount: 6,
-    mat: "Rich walnut millwork, fluted glass, patinated brass fixtures, velvet banquette seating, ambient warm cove lighting",
-    problem: "Luxury regional workplace and hospitality entertainment lounge for Pernod Ricard in Hyderabad, blending corporate functionality with high-end bar hospitality.",
-    arch: "A signature tasting bar and convivial lounge serves as the social anchor of the office, flanked by discreet executive meeting suites and flexible collaborative team areas.",
-    metrics: "3ds Max · V-Ray · Hospitality & Workplace Design",
-    year: "2024",
-    location: "Hyderabad, Telangana",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Pernod Ricard — Corporate Office, Kolkata",
-    cat: "Commercial",
-    slug: "pernod-ricard-kolkata",
-    imagesCount: 15,
-    mat: "Bespoke brass fretwork, dark oak veneer, fluted marble bar counter, luxury leather upholstery, custom pendant lighting",
-    problem: "Grand corporate office and executive brand lounge for Pernod Ricard in Kolkata, celebrating regional heritage and world-class luxury spirit brands.",
-    arch: "An opulent multi-zone environment featuring a showcase cocktail tasting salon, private boardroom with acoustic timber ceilings, collaborative open-desk zones, and intimate VIP consultation dens.",
-    metrics: "3ds Max · V-Ray · Luxury Commercial Visualization",
-    year: "2024",
-    location: "Kolkata, West Bengal",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Shri Mahant Indiresh Cancer Hospital & Research Center",
-    cat: "Commercial",
-    slug: "shri-mahant-indresh-hospital",
-    imagesCount: 9,
-    mat: "Antimicrobial vinyl flooring, soft curved Corian counters, acoustic wall paneling, calming biophilic art murals, indirect healing illumination",
-    problem: "State-of-the-art healthcare architectural visualization for the Shri Mahant Indiresh Cancer Hospital and Research Center in Dehradun, prioritizing patient comfort, healing aesthetics, and clinical efficiency.",
-    arch: "Thoughtfully zoned reception, patient triage, chemotherapy day-care suites, private patient rooms, and doctors' consultation chambers using soothing pastel tones, natural daylighting, and barrier-free circulation.",
-    metrics: "3ds Max · V-Ray · Healthcare Architecture Visualization",
-    year: "2023",
-    location: "Patel Nagar, Dehradun, Uttarakhand",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "TDK Corporation — R&D & Tech Center, Bengaluru",
-    cat: "Commercial",
-    slug: "tdk-bengaluru",
-    imagesCount: 11,
-    mat: "Perforated acoustic aluminium ceilings, frosted privacy glass, light birch millwork, anti-static ESD flooring, crisp 4000K technical task lighting",
-    problem: "High-precision technology workspace and R&D lab environment for TDK Electronics in Bengaluru, accommodating electronic hardware innovation and software teams.",
-    arch: "Clean minimalist layout with high-efficiency workstation clusters, ESD-compliant development labs, collaborative stand-up meeting nooks, and a sleek modern reception with digital product showcases.",
-    metrics: "Autodesk 3ds Max · V-Ray · High-Tech Workspace Design",
-    year: "2024",
-    location: "Bengaluru, Karnataka",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Wipro PARI — Automation & Engineering Office, Noida",
-    cat: "Commercial",
-    slug: "wipro-pari-noida",
-    imagesCount: 11,
-    mat: "Exposed architectural concrete, vibrant brand colour accents, industrial metal screens, acoustic carpet tiles, modular benching systems",
-    problem: "Engineering workplace and customer presentation center for Wipro PARI (Precision Automation & Robotics India) in Noida, reflecting robotic agility and industrial precision.",
-    arch: "An open, dynamic floor plan punctuated by vibrant collaborative break-out areas, robotics demonstration suites, executive boardrooms, and ergonomic engineering workstations.",
-    metrics: "3ds Max · V-Ray · Industrial Automation Office Layout",
-    year: "2024",
-    location: "Noida, Uttar Pradesh",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Linen House Residence",
-    cat: "Residential",
-    slug: "linen-house",
-    imagesCount: 4,
-    mat: "Raw Belgian linen, smoked oak, lime plaster, silver travertine",
-    problem: "A full restoration of a light-filled duplex apartment seeking visual calm, acoustic softness, and honest tactile materials to unwind from urban density.",
-    arch: "Monolithic structural volumes, hand-applied lime plaster to soften ambient light, and floor-to-ceiling smoked oak joinery concealing storage seamlessly.",
-    metrics: "Autodesk 3ds Max · D5 Render · Photoshop · 1920×1080 Widescreen",
-    year: "2025",
-    location: "DLF Phase 1, Gurgaon",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Oak & Stone Residence",
-    cat: "Residential",
-    slug: "oak-and-stone-residence",
-    imagesCount: 4,
-    mat: "European white oak, silver travertine, brushed brass, fluted glass",
-    problem: "Designing an enduring family sanctuary with generous natural illumination, celebrating the contrast between warm timber and monumental masonry.",
-    arch: "Monolithic travertine kitchen islands anchor the open-plan living pavilion. Subtle brass reveal details and pocket doors create seamless visual transitions.",
-    metrics: "Autodesk Maya · 3ds Max · V-Ray · Photometric Lighting",
-    year: "2024",
-    location: "ARGROUP Design Studio, New Delhi",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Courtyard Villa",
-    cat: "Residential",
-    slug: "courtyard-villa",
-    imagesCount: 4,
-    mat: "Terracotta clay, charred cedar, low-iron glass, poured terrazzo",
-    problem: "Harmonising modern indoor-outdoor tropical architecture with passive cross-ventilation and monsoon climate resilience.",
-    arch: "All living spaces wrap around an open-air central water courtyard with lush indigenous flora. Deep roof overhangs eliminate boundaries between nature and shelter.",
-    metrics: "AutoCAD · 3ds Max · Lumion · Daylighting Study",
-    year: "2022",
-    location: "Residential Project",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Minimal Quartzite Kitchen",
-    cat: "Residential",
-    slug: "minimal-kitchen",
-    imagesCount: 4,
-    mat: "Quarter-sawn oak, Taj Mahal quartzite, matte black steel, clay plaster",
-    problem: "A high-performance chef's culinary space stripped of visual clutter, focusing on ergonomic touchpoints and honest stone fabrication.",
-    arch: "Handleless cabinetry with 45-degree chamfer edges, integrated cooktop with downdraft ventilation, and an uninterrupted 3.8-meter quartzite monolith.",
-    metrics: "3ds Max · V-Ray · Millwork Detailing · D5 Render",
-    year: "2022",
-    location: "Gurgaon",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Japandi Bedroom Concept",
-    cat: "Concept",
-    slug: "japandi-bedroom-concept",
-    imagesCount: 4,
-    mat: "Blonde ash, Washi paper, tatami mats, brushed wool",
-    problem: "Synthesising Scandinavian functional minimalism with the Japanese philosophy of Wabi-sabi in a sleep retreat.",
-    arch: "Low-profile platform bed floating above woven tatami, accompanied by custom floor-to-ceiling sliding Washi screen partitions that softly filter morning rays.",
-    metrics: "Autodesk Maya · 3ds Max · D5 Render · 16-bit Shaders",
-    year: "2025",
-    location: "Concept Study",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Reading Room Alcove",
-    cat: "Concept",
-    slug: "reading-room-concept",
-    imagesCount: 4,
-    mat: "American walnut, cognac saddle leather, unlacquered brass, mohair",
-    problem: "An introspective private study designed for bibliophiles, with integrated book stacks and acoustically dampened reading niches.",
-    arch: "Full-height walnut library shelving with concealed LED edge illumination, ergonomic fireside lounge chair, and sound-absorbing acoustic felt wall panels.",
-    metrics: "3ds Max · Lumion · Photometric IES Lighting",
-    year: "2024",
-    location: "Concept Study",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Boutique Hotel Lobby",
-    cat: "Commercial",
-    slug: "boutique-hotel-lobby",
-    imagesCount: 4,
-    mat: "Arabescato marble, fluted walnut, patinated bronze, bouclé",
-    problem: "Balancing monumental grandeur with intimate hospitality checkpoints for an independent heritage boutique hotel.",
-    arch: "A sequence of arched portals frames axial vistas toward an interior courtyard garden. Bespoke bronze lighting fixtures cast soft downward pools of light.",
-    metrics: "Autodesk 3ds Max · V-Ray · Custom FF&E Modeling",
-    year: "2023",
-    location: "New Delhi",
-    live: "",
-    behance: ""
-  },
-  {
-    title: "Wellness Spa Sanctuary",
-    cat: "Commercial",
-    slug: "wellness-spa",
-    imagesCount: 4,
-    mat: "Warm limewash, reclaimed teak, river stone, water features",
-    problem: "Crafting a sensory subterranean sanctuary dedicated to holistic hydrotherapy and meditative mindfulness.",
-    arch: "Indirect perimeter coves wash textured limewash walls with 2400K candlelight warmth. Deep teak stepping stones cross shallow reflection pools leading into private treatment chambers.",
-    metrics: "3ds Max · Lumion · Lighting Simulation · Acoustic Zoning",
-    year: "2023",
-    location: "Commercial Project",
-    live: "",
-    behance: ""
-  },
-
-  // ── Events & Exhibition Projects (4 Dimension Marcom Pvt Ltd) ──
-
-  {
+  // ── 1. Events & Exhibition Projects ──
+{
     title: "AGI Greenpac — Exhibition Stall",
     cat: "Events",
     slug: "agi-exhibition",
@@ -378,7 +26,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Ahuja Radios — Exhibition Stall",
     cat: "Events",
     slug: "ahuja-stall-design",
@@ -392,7 +40,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Eastman Auto & Power — Exhibition Stall",
     cat: "Events",
     slug: "eastman-stall-design",
@@ -406,7 +54,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Eicher Tractors — Exhibition Design",
     cat: "Events",
     slug: "eicher-tractors",
@@ -420,7 +68,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "GeoSmart India — Octave Booth 3D",
     cat: "Events",
     slug: "geosmart-india-octave-booth",
@@ -434,7 +82,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Hitachi — Customer Family Meet",
     cat: "Events",
     slug: "hitachi-customer-family-meet",
@@ -448,7 +96,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Meril Life Sciences — Exhibition Stall",
     cat: "Events",
     slug: "meril-stall-design",
@@ -462,7 +110,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Microtek — Event Stall, Dhaka",
     cat: "Events",
     slug: "microtek-event-dhaka",
@@ -476,7 +124,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Microtek — Stall Design, Pune",
     cat: "Events",
     slug: "microtek-stall-design-pune",
@@ -490,7 +138,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Noida Haat — Cultural Venue Design",
     cat: "Events",
     slug: "noida-haat",
@@ -504,7 +152,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Pahari Goat — Restaurant Concept",
     cat: "Events",
     slug: "pahari-goat",
@@ -518,7 +166,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Rungta Steel — Exhibition Stall, Lucknow",
     cat: "Events",
     slug: "rungta-steel-lucknow",
@@ -532,7 +180,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Sony — Exhibition Stall Design",
     cat: "Events",
     slug: "sony-exhibition",
@@ -546,7 +194,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Surajkund — Wedding Event Staging",
     cat: "Events",
     slug: "surajkund-shadi-event",
@@ -560,7 +208,7 @@ var P = [
     live: "",
     behance: ""
   },
-  {
+{
     title: "Vivo — Exhibition Stall Design",
     cat: "Events",
     slug: "vivo-exhibition",
@@ -571,6 +219,418 @@ var P = [
     metrics: "3ds Max · V-Ray · Brand Experience Design",
     year: "2025",
     location: "India",
+    live: "",
+    behance: ""
+  },
+
+  // ── 2. Commercial & Retail Projects ──
+{
+    title: "Karim's Restaurant — Kolkata",
+    cat: "Commercial",
+    slug: "karim-kolkata",
+    imagesCount: 7,
+    mat: "Smoked walnut, brass fretwork, fluted columns, velvet upholstery, heritage archways",
+    problem: "High-end 3D architectural and interior visualization for the historic Mughal cuisine brand in Kolkata, requiring regal grandeur paired with high-volume hospitality flow.",
+    arch: "Heritage arched ceiling portals, custom illuminated brass chandeliers, ambient cove illumination, and grand exterior storefront facade designed for visual impact.",
+    metrics: "Autodesk 3ds Max · V-Ray · Adobe Photoshop · 1920×1080 Widescreen",
+    year: "2023",
+    location: "Kolkata, India",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Pind Balluchi Restaurant",
+    cat: "Commercial",
+    slug: "pind-baluchi",
+    imagesCount: 8,
+    mat: "Carved teak, exposed brick, mud plaster finish, wrought iron, copper vessels",
+    problem: "Reimagining the rustic heritage village dining aesthetic into an immersive, atmospheric restaurant & bar dining space.",
+    arch: "Handcrafted timber ceiling pergolas, traditional terracotta pottery alcoves, carved wood entrance doorway, and layered 2400K warm atmospheric lighting.",
+    metrics: "Autodesk 3ds Max · AutoCAD · Lumion · 1920×1080 Widescreen",
+    year: "2023",
+    location: "Delhi NCR",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Smart Dukan Retail Chain",
+    cat: "Commercial",
+    slug: "smart-dukan",
+    imagesCount: 9,
+    mat: "Acrylic solid surface, powder-coated steel, glass showcases, LED lightboxes, ACP exterior",
+    problem: "Standardized modern retail outlet store concept engineered for multi-location rollout across Delhi NCR.",
+    arch: "High-visibility retail showroom layout with central demo counters, perimeter branded display bays, and striking exterior facade with illuminated 3D signage.",
+    metrics: "Autodesk 3ds Max · AutoCAD · CorelDraw · Delhi Signage",
+    year: "2020",
+    location: "Delhi NCR",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Aristocrat Technologies — Candor TechSpace",
+    cat: "Commercial",
+    slug: "aristocrat-candor-techspace",
+    imagesCount: 19,
+    mat: "Acoustic ceiling baffles, fluted glass partitions, terrazzo flooring, warm oak wall panelling, linear LED profiles",
+    problem: "Corporate workplace and technology center 3D visualization for Aristocrat Technologies at Candor TechSpace, Sector 135 Noida, balancing open-plan engineering desks with agile breakout hubs.",
+    arch: "Dynamic curved circulation spine connecting modern reception, collaboration pods, high-spec meeting suites, and ergonomic sit-stand workstations bathed in diffused circadian lighting.",
+    metrics: "Autodesk 3ds Max · AutoCAD · V-Ray · Commercial Office Layout",
+    year: "2024",
+    location: "Candor TechSpace, Noida Sector 135",
+    live: "",
+    behance: ""
+  },
+{
+    title: "AVL India — Tech Center, Gurugram",
+    cat: "Commercial",
+    slug: "avl-india-gurugram",
+    imagesCount: 7,
+    mat: "Industrial metal mesh, acoustic wall panels, engineered timber, high-performance commercial carpet tiles, recessed spotlights",
+    problem: "High-tech corporate office and engineering facility visualization for AVL India Software in Udyog Vihar, Gurugram, creating an inspiring hub for automotive powertrain and simulation engineers.",
+    arch: "Automotive-inspired geometric ceiling rafts, private glass-fronted executive cabins, and collaborative scrum spaces featuring corporate brand identity and precision accent lighting.",
+    metrics: "Autodesk 3ds Max · V-Ray · AutoCAD · Workplace Planning",
+    year: "2024",
+    location: "Udyog Vihar, Gurugram",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Galgotias University — Campus & Interior Architecture",
+    cat: "Commercial",
+    slug: "galgotias-university",
+    imagesCount: 9,
+    mat: "Polished Italian marble, acoustic timber slats, tempered structural glass, architectural bronze, stretch ceiling systems",
+    problem: "Grand institutional and administrative interior visualization for Galgotias University campus, blending academic prestige with state-of-the-art educational and executive facilities.",
+    arch: "Soaring double-height entrance lobby with monumental columns, acoustic lecture auditoriums, digital library pods, and dignified faculty conference suites.",
+    metrics: "Autodesk 3ds Max · V-Ray · Lumion · Institutional Design",
+    year: "2023",
+    location: "Greater Noida, Uttar Pradesh",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Galaxy IT Park — Executive Fitness Center",
+    cat: "Commercial",
+    slug: "galaxy-it-park-gym",
+    imagesCount: 5,
+    mat: "Shock-absorbing rubber sports flooring, black powder-coated steel trusses, neon LED accent lighting, full-height mirror walls, exposed concrete",
+    problem: "Design a high-energy, premium corporate fitness club and wellness facility located on the ground floor of Tower C, Galaxy IT Park in Noida.",
+    arch: "Zoned cardiovascular, strength training, and functional CrossFit turf areas framed by industrial exposed ceilings, motivational LED graphics, and recessed cove illumination.",
+    metrics: "Autodesk 3ds Max · V-Ray · Photoshop · Gym & Wellness Interior",
+    year: "2024",
+    location: "Galaxy IT Park, Noida",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Indus — Corporate Headquarters, Gurugram",
+    cat: "Commercial",
+    slug: "indus-gurugram",
+    imagesCount: 15,
+    mat: "Micro-perforated acoustic timber, brushed brass signage, Statuario marble reception desk, ergonomic modular workstations, LED linear suspensions",
+    problem: "Comprehensive corporate office interior visualization in Gurugram, delivering a sophisticated environment for executive leadership, client negotiations, and collaborative project teams.",
+    arch: "A striking sculptural reception atrium leads to central collaborative town hall steps, quiet focus pods, executive boardroom suites with telepresence AV, and vibrant employee refreshment lounges.",
+    metrics: "Autodesk 3ds Max · V-Ray · AutoCAD · Space Planning",
+    year: "2024",
+    location: "Gurugram, Haryana",
+    live: "",
+    behance: ""
+  },
+{
+    title: "INOXPA India — Corporate Facility, Pune",
+    cat: "Commercial",
+    slug: "inoxpa-pune",
+    imagesCount: 7,
+    mat: "Brushed stainless steel finishes, epoxy industrial floor coatings, glass partitions, corporate blue accents, acoustic ceiling baffles",
+    problem: "Corporate headquarters and industrial experience center for INOXPA India in Pune, showcasing specialized fluid-handling equipment and modern management offices.",
+    arch: "Sleek industrial-modernist aesthetic incorporating stainless steel accents mirroring the brand's products, glass-walled conference rooms with clear sightlines into demonstration zones, and crisp architectural illumination.",
+    metrics: "Autodesk 3ds Max · V-Ray · Industrial Facility Design",
+    year: "2023",
+    location: "Pune, Maharashtra",
+    live: "",
+    behance: ""
+  },
+{
+    title: "ISGEC Heavy Engineering — Corporate Office, Noida",
+    cat: "Commercial",
+    slug: "isgec-noida",
+    imagesCount: 14,
+    mat: "Smoked teak panelling, Travertine stone wall cladding, double-glazed acoustic glass, textured wall coverings, architectural downlights",
+    problem: "Interior visualization for ISGEC Heavy Engineering's major corporate office in Noida, projecting industrial strength, corporate heritage, and forward-looking engineering excellence.",
+    arch: "Stately reception lounge with backlit logo feature wall, expansive boardrooms with motorized AV systems, ergonomic departmental floors, and luxurious private director chambers.",
+    metrics: "Autodesk 3ds Max · V-Ray · Photoshop · Corporate Headquarters",
+    year: "2024",
+    location: "Noida, Uttar Pradesh",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Juniper Networks — Tech Office, Gurugram",
+    cat: "Commercial",
+    slug: "juniper-networks-gurugram",
+    imagesCount: 5,
+    mat: "Hexagonal acoustic wall tiles, biophilic moss walls, warm ash timber, polished screed flooring, colour-tunable smart LED luminaires",
+    problem: "Next-generation agile tech workplace design for Juniper Networks in Gurugram, optimized for high connectivity, collaboration, and employee wellbeing.",
+    arch: "Biophilic open-plan floorplate integrating living plant walls, flexible huddle hubs with writable glass, network operation demonstration booths, and sound-insulated phone booths.",
+    metrics: "Autodesk 3ds Max · V-Ray · Biophilic Workplace Visualization",
+    year: "2024",
+    location: "Gurugram, Haryana",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Luminous Power Technologies — Experience Center & Office",
+    cat: "Commercial",
+    slug: "luminous-commercial",
+    imagesCount: 9,
+    mat: "Backlit acrylic panels, corporate blue and solar yellow accents, high-gloss display pedestals, modular presentation walls, polished vitrified tiles",
+    problem: "Brand experience showroom and executive office space for Luminous Power Technologies, displaying next-gen solar, inverter, and energy storage innovations.",
+    arch: "Interactive product display islands with halo edge-lighting, brand story video wall, comfortable client consultation suites, and energetic modern open workstation zones.",
+    metrics: "3ds Max · V-Ray · Retail & Office Visualization",
+    year: "2023",
+    location: "Delhi NCR",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Pernod Ricard — Regional Office, Hyderabad",
+    cat: "Commercial",
+    slug: "pernod-ricard-hyderabad",
+    imagesCount: 6,
+    mat: "Rich walnut millwork, fluted glass, patinated brass fixtures, velvet banquette seating, ambient warm cove lighting",
+    problem: "Luxury regional workplace and hospitality entertainment lounge for Pernod Ricard in Hyderabad, blending corporate functionality with high-end bar hospitality.",
+    arch: "A signature tasting bar and convivial lounge serves as the social anchor of the office, flanked by discreet executive meeting suites and flexible collaborative team areas.",
+    metrics: "3ds Max · V-Ray · Hospitality & Workplace Design",
+    year: "2024",
+    location: "Hyderabad, Telangana",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Pernod Ricard — Corporate Office, Kolkata",
+    cat: "Commercial",
+    slug: "pernod-ricard-kolkata",
+    imagesCount: 15,
+    mat: "Bespoke brass fretwork, dark oak veneer, fluted marble bar counter, luxury leather upholstery, custom pendant lighting",
+    problem: "Grand corporate office and executive brand lounge for Pernod Ricard in Kolkata, celebrating regional heritage and world-class luxury spirit brands.",
+    arch: "An opulent multi-zone environment featuring a showcase cocktail tasting salon, private boardroom with acoustic timber ceilings, collaborative open-desk zones, and intimate VIP consultation dens.",
+    metrics: "3ds Max · V-Ray · Luxury Commercial Visualization",
+    year: "2024",
+    location: "Kolkata, West Bengal",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Shri Mahant Indiresh Cancer Hospital & Research Center",
+    cat: "Commercial",
+    slug: "shri-mahant-indresh-hospital",
+    imagesCount: 9,
+    mat: "Antimicrobial vinyl flooring, soft curved Corian counters, acoustic wall paneling, calming biophilic art murals, indirect healing illumination",
+    problem: "State-of-the-art healthcare architectural visualization for the Shri Mahant Indiresh Cancer Hospital and Research Center in Dehradun, prioritizing patient comfort, healing aesthetics, and clinical efficiency.",
+    arch: "Thoughtfully zoned reception, patient triage, chemotherapy day-care suites, private patient rooms, and doctors' consultation chambers using soothing pastel tones, natural daylighting, and barrier-free circulation.",
+    metrics: "3ds Max · V-Ray · Healthcare Architecture Visualization",
+    year: "2023",
+    location: "Patel Nagar, Dehradun, Uttarakhand",
+    live: "",
+    behance: ""
+  },
+{
+    title: "TDK Corporation — R&D & Tech Center, Bengaluru",
+    cat: "Commercial",
+    slug: "tdk-bengaluru",
+    imagesCount: 11,
+    mat: "Perforated acoustic aluminium ceilings, frosted privacy glass, light birch millwork, anti-static ESD flooring, crisp 4000K technical task lighting",
+    problem: "High-precision technology workspace and R&D lab environment for TDK Electronics in Bengaluru, accommodating electronic hardware innovation and software teams.",
+    arch: "Clean minimalist layout with high-efficiency workstation clusters, ESD-compliant development labs, collaborative stand-up meeting nooks, and a sleek modern reception with digital product showcases.",
+    metrics: "Autodesk 3ds Max · V-Ray · High-Tech Workspace Design",
+    year: "2024",
+    location: "Bengaluru, Karnataka",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Wipro PARI — Automation & Engineering Office, Noida",
+    cat: "Commercial",
+    slug: "wipro-pari-noida",
+    imagesCount: 11,
+    mat: "Exposed architectural concrete, vibrant brand colour accents, industrial metal screens, acoustic carpet tiles, modular benching systems",
+    problem: "Engineering workplace and customer presentation center for Wipro PARI (Precision Automation & Robotics India) in Noida, reflecting robotic agility and industrial precision.",
+    arch: "An open, dynamic floor plan punctuated by vibrant collaborative break-out areas, robotics demonstration suites, executive boardrooms, and ergonomic engineering workstations.",
+    metrics: "3ds Max · V-Ray · Industrial Automation Office Layout",
+    year: "2024",
+    location: "Noida, Uttar Pradesh",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Boutique Hotel Lobby",
+    cat: "Commercial",
+    slug: "boutique-hotel-lobby",
+    imagesCount: 1,
+    mat: "Arabescato marble, fluted walnut, patinated bronze, bouclé",
+    problem: "Balancing monumental grandeur with intimate hospitality checkpoints for an independent heritage boutique hotel.",
+    arch: "A sequence of arched portals frames axial vistas toward an interior courtyard garden. Bespoke bronze lighting fixtures cast soft downward pools of light.",
+    metrics: "Autodesk 3ds Max · V-Ray · Custom FF&E Modeling",
+    year: "2023",
+    location: "New Delhi",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Wellness Spa Sanctuary",
+    cat: "Commercial",
+    slug: "wellness-spa",
+    imagesCount: 1,
+    mat: "Warm limewash, reclaimed teak, river stone, water features",
+    problem: "Crafting a sensory subterranean sanctuary dedicated to holistic hydrotherapy and meditative mindfulness.",
+    arch: "Indirect perimeter coves wash textured limewash walls with 2400K candlelight warmth. Deep teak stepping stones cross shallow reflection pools leading into private treatment chambers.",
+    metrics: "3ds Max · Lumion · Lighting Simulation · Acoustic Zoning",
+    year: "2023",
+    location: "Commercial Project",
+    live: "",
+    behance: ""
+  },
+  {
+    title: "Pfeiffer House — Commercial Architecture & Facade",
+    cat: "Commercial",
+    slug: "pfeiffer-house",
+    imagesCount: 2,
+    mat: "Perforated Corten steel panels, low-E double-glazed curtain wall, extruded aluminium louvers, frameless glass canopy",
+    problem: "Exterior facade visualization and adaptive architectural recladding proposals for Pfeiffer House, exploring parametric solar shading versus high-transparency curtain glazing.",
+    arch: "Option 1 features a kinetic-inspired triangular perforated screen shielding against solar heat gain while preserving external vistas. Option 2 introduces clean horizontal louvers framing a full-height glass corner curtain wall.",
+    metrics: "Autodesk 3ds Max · V-Ray · Rhino/Grasshopper Facade Study · Photoshop",
+    year: "2024",
+    location: "Commercial Business District",
+    live: "",
+    behance: ""
+  },
+
+  // ── 3. Residential Architecture & Interior Projects ──
+  {
+    title: "The Sunset Corner Villa — Architecture & Great Room",
+    cat: "Residential",
+    slug: "sunset-corner-villa",
+    imagesCount: 5,
+    mat: "Cantilevered cedar soffits, smoked oak millwork, Statuario marble feature slabs, low-iron structural glass, architectural bronze",
+    problem: "Architectural exterior elevation and grand interior living spaces for a multi-level luxury corner villa, balancing monumental scale with warm tactile intimacy.",
+    arch: "Dramatic cantilevered upper volumes with vertical cedar louvers capture evening light. The double-height great room and glass atrium connect seamlessly to the dining salon and landscaped gardens.",
+    metrics: "Autodesk 3ds Max · V-Ray · Corona Renderer · Architectural Visualization",
+    year: "2024",
+    location: "DLF Phase 5, Gurugram",
+    live: "",
+    behance: ""
+  },
+  {
+    title: "Contemporary Urban Villa — Architecture & Master Suite",
+    cat: "Residential",
+    slug: "contemporary-4story-residence",
+    imagesCount: 5,
+    mat: "Textured fluted wall panels, smoked glass joinery, Nero Marquina marble, brushed brass accents, acoustic fabric headboard",
+    problem: "Full architectural exterior and private master sanctuary design for an urban multi-story residence, integrating biophilic facade balconies with a serene private master wing.",
+    arch: "The facade utilizes layered horizontal balcony tiers and vertical glass light-wells. The master suite features an uninterrupted axial flow into a boutique dressing room and dark marble ensuite bath.",
+    metrics: "Autodesk 3ds Max · V-Ray · AutoCAD · Residential Visualization",
+    year: "2024",
+    location: "Greater Kailash, New Delhi",
+    live: "",
+    behance: ""
+  },
+  {
+    title: "Brick & Timber Contemporary Villa — Mountain View Suites",
+    cat: "Residential",
+    slug: "brick-and-timber-villa",
+    imagesCount: 5,
+    mat: "Wire-cut exposed brickwork, board-formed concrete, natural teak slats, sage velvet upholstery, brushed copper luminaires",
+    problem: "Exterior facade and bespoke guest suites visualization for a contemporary villa blending tactile masonry with serene, biophilic bedrooms overlooking mountain topography.",
+    arch: "Deep white portal frames shade the upper brick volume. Twin luxury suites feature custom fluted timber wall cladding, suspended bedside pendants, and integrated wardrobe corridors.",
+    metrics: "Autodesk 3ds Max · V-Ray · Lumion · Daylighting Study",
+    year: "2023",
+    location: "Dehradun, Uttarakhand",
+    live: "",
+    behance: ""
+  },
+  {
+    title: "Symmetrical Urban Townhouse — Modern Suites",
+    cat: "Residential",
+    slug: "symmetrical-townhouse",
+    imagesCount: 5,
+    mat: "Cast-stone jaali screens, vertical timber cladding, herringbone oak flooring, matte lacquer millwork, concealed cove lighting",
+    problem: "Exterior elevation and contemporary bedroom interiors for a high-density urban townhouse, maximizing natural illumination and acoustic insulation from the street.",
+    arch: "A balanced central vertical axis frames staircase windows flanked by twin balconies. Interior bedrooms incorporate coffered architectural ceilings, herringbone flooring, and fluted acoustic wall features.",
+    metrics: "Autodesk 3ds Max · AutoCAD · V-Ray · Townhouse Architecture",
+    year: "2023",
+    location: "South Extension, New Delhi",
+    live: "",
+    behance: ""
+  },
+  {
+    title: "Royal Neoclassical Master Suite & Dressing Salon",
+    cat: "Residential",
+    slug: "royal-neoclassical-suite",
+    imagesCount: 4,
+    mat: "Coffered plaster ceilings, gold-leaf boiserie moulding, Italian Calacatta marble, crystal chandeliers, silk-velvet drapery",
+    problem: "High-end neoclassical residential master suite and dressing chamber visualization, demanding palatial European proportions, bespoke millwork, and opulent craftsmanship.",
+    arch: "Deep coffered ceiling grids with indirect cove uplighting, arched display cabinetry, gilded furniture detailing, and a harmonious balance of classical grandeur with modern luxury comfort.",
+    metrics: "Autodesk 3ds Max · V-Ray · Classical Millwork Detailing · Photoshop",
+    year: "2024",
+    location: "Vasant Vihar, New Delhi",
+    live: "",
+    behance: ""
+  },
+  {
+    title: "Moody Minimalist Penthouse Suite",
+    cat: "Residential",
+    slug: "moody-minimalist-suite",
+    imagesCount: 4,
+    mat: "Rough-hewn slate slabs, custom halo LED luminaire, fluted acoustic panelling, Calacatta marble consoles, matte charcoal cabinetry",
+    problem: "Dramatic, atmospheric bedroom visualization for a modern penthouse, celebrating dark tactile materiality, architectural lighting accents, and uncluttered geometry.",
+    arch: "A floating halo ring casts grazing ambient light across natural split-face stone. Integrated architectural linear profiles frame the bed niche while concealed joinery conceals wardrobe access.",
+    metrics: "Autodesk 3ds Max · Corona Renderer · IES Photometric Lighting",
+    year: "2024",
+    location: "DLF Golf Links, Gurugram",
+    live: "",
+    behance: ""
+  },
+  {
+    title: "Bespoke Luxury Bathroom & Spa Sanctuaries",
+    cat: "Residential",
+    slug: "luxury-bathroom-sanctuaries",
+    imagesCount: 3,
+    mat: "Bookmatched marble slabs, fluted vanity fronts, matte black fixtures, backlit circular & arched mirrors, freestanding solid-surface tubs",
+    problem: "A curated design portfolio of contemporary luxury bathrooms, master ensuites, and wellness powder rooms engineered for five-star residential sanctuaries.",
+    arch: "Seamless integration of indirect perimeter light coves, frameless wet-room glass partitions, integrated recessed cosmetic shelves, and organic sculptural fixtures.",
+    metrics: "Autodesk 3ds Max · V-Ray · Bathroom FF&E Modeling · Lumion",
+    year: "2024",
+    location: "Luxury Residential Projects, Delhi NCR",
+    live: "",
+    behance: ""
+  },
+
+  // ── 4. Other & Concept Design Studies ──
+{
+    title: "Japandi Bedroom Concept",
+    cat: "Other",
+    slug: "japandi-bedroom-concept",
+    imagesCount: 1,
+    mat: "Blonde ash, Washi paper, tatami mats, brushed wool",
+    problem: "Synthesising Scandinavian functional minimalism with the Japanese philosophy of Wabi-sabi in a sleep retreat.",
+    arch: "Low-profile platform bed floating above woven tatami, accompanied by custom floor-to-ceiling sliding Washi screen partitions that softly filter morning rays.",
+    metrics: "Autodesk Maya · 3ds Max · D5 Render · 16-bit Shaders",
+    year: "2025",
+    location: "Concept Study",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Reading Room Alcove",
+    cat: "Other",
+    slug: "reading-room-concept",
+    imagesCount: 1,
+    mat: "American walnut, cognac saddle leather, unlacquered brass, mohair",
+    problem: "An introspective private study designed for bibliophiles, with integrated book stacks and acoustically dampened reading niches.",
+    arch: "Full-height walnut library shelving with concealed LED edge illumination, ergonomic fireside lounge chair, and sound-absorbing acoustic felt wall panels.",
+    metrics: "3ds Max · Lumion · Photometric IES Lighting",
+    year: "2024",
+    location: "Concept Study",
     live: "",
     behance: ""
   }
