@@ -1129,7 +1129,7 @@
   // --------------------------------------------------------------------------
   // 10. Contact Details, Copy Email & Form Handling
   // --------------------------------------------------------------------------
-  var targetEmail = typeof EMAIL !== "undefined" ? EMAIL : "ajayojha16@gmail.com";
+  var targetEmail = typeof EMAIL !== "undefined" ? EMAIL : "ajaykumarojha16@gmail.com";
   var targetPhone = typeof PHONE !== "undefined" ? PHONE : "+91-8802820881";
 
   var emailLink = $("#emailLink");
