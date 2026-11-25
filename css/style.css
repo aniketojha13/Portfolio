@@ -47,7 +47,6 @@
 }
 
 /* Dark Theme Palette: Minimalist studio obsidian & platinum lines */
-:root[data-theme="dark"],
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0e0e10;

@@ -224,7 +224,48 @@ var P = [
   },
 
   // ── 2. Commercial & Retail Projects ──
-
+{
+    title: "Karim's Restaurant — Kolkata",
+    cat: "Commercial",
+    slug: "karim-kolkata",
+    imagesCount: 7,
+    mat: "Smoked walnut, brass fretwork, fluted columns, velvet upholstery, heritage archways",
+    problem: "High-end 3D architectural and interior visualization for the historic Mughal cuisine brand in Kolkata, requiring regal grandeur paired with high-volume hospitality flow.",
+    arch: "Heritage arched ceiling portals, custom illuminated brass chandeliers, ambient cove illumination, and grand exterior storefront facade designed for visual impact.",
+    metrics: "Autodesk 3ds Max · V-Ray · Adobe Photoshop · 1920×1080 Widescreen",
+    year: "2023",
+    location: "Kolkata, India",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Pind Balluchi Restaurant",
+    cat: "Commercial",
+    slug: "pind-baluchi",
+    imagesCount: 8,
+    mat: "Carved teak, exposed brick, mud plaster finish, wrought iron, copper vessels",
+    problem: "Reimagining the rustic heritage village dining aesthetic into an immersive, atmospheric restaurant & bar dining space.",
+    arch: "Handcrafted timber ceiling pergolas, traditional terracotta pottery alcoves, carved wood entrance doorway, and layered 2400K warm atmospheric lighting.",
+    metrics: "Autodesk 3ds Max · AutoCAD · Lumion · 1920×1080 Widescreen",
+    year: "2023",
+    location: "Delhi NCR",
+    live: "",
+    behance: ""
+  },
+{
+    title: "Smart Dukan Retail Chain",
+    cat: "Commercial",
+    slug: "smart-dukan",
+    imagesCount: 9,
+    mat: "Acrylic solid surface, powder-coated steel, glass showcases, LED lightboxes, ACP exterior",
+    problem: "Standardized modern retail outlet store concept engineered for multi-location rollout across Delhi NCR.",
+    arch: "High-visibility retail showroom layout with central demo counters, perimeter branded display bays, and striking exterior facade with illuminated 3D signage.",
+    metrics: "Autodesk 3ds Max · AutoCAD · CorelDraw · Delhi Signage",
+    year: "2020",
+    location: "Delhi NCR",
+    live: "",
+    behance: ""
+  },
 {
     title: "Aristocrat Technologies — Candor TechSpace",
     cat: "Commercial",
@@ -521,7 +562,20 @@ var P = [
     live: "",
     behance: ""
   },
-  
+  {
+    title: "Royal Neoclassical Master Suite & Dressing Salon",
+    cat: "Residential",
+    slug: "royal-neoclassical-suite",
+    imagesCount: 4,
+    mat: "Coffered plaster ceilings, gold-leaf boiserie moulding, Italian Calacatta marble, crystal chandeliers, silk-velvet drapery",
+    problem: "High-end neoclassical residential master suite and dressing chamber visualization, demanding palatial European proportions, bespoke millwork, and opulent craftsmanship.",
+    arch: "Deep coffered ceiling grids with indirect cove uplighting, arched display cabinetry, gilded furniture detailing, and a harmonious balance of classical grandeur with modern luxury comfort.",
+    metrics: "Autodesk 3ds Max · V-Ray · Classical Millwork Detailing · Photoshop",
+    year: "2024",
+    location: "Vasant Vihar, New Delhi",
+    live: "",
+    behance: ""
+  },
   {
     title: "Moody Minimalist Penthouse Suite",
     cat: "Residential",
@@ -553,47 +607,33 @@ var P = [
 
   // ── 4. Other & Concept Design Studies ──
 {
-    title: "Karim's Restaurant — Kolkata",
-    cat: "Commercial",
-    slug: "karim-kolkata",
-    imagesCount: 7,
-    mat: "Smoked walnut, brass fretwork, fluted columns, velvet upholstery, heritage archways",
-    problem: "High-end 3D architectural and interior visualization for the historic Mughal cuisine brand in Kolkata, requiring regal grandeur paired with high-volume hospitality flow.",
-    arch: "Heritage arched ceiling portals, custom illuminated brass chandeliers, ambient cove illumination, and grand exterior storefront facade designed for visual impact.",
-    metrics: "Autodesk 3ds Max · V-Ray · Adobe Photoshop · 1920×1080 Widescreen",
-    year: "2023",
-    location: "Kolkata, India",
+    title: "Japandi Bedroom Concept",
+    cat: "Other",
+    slug: "japandi-bedroom-concept",
+    imagesCount: 1,
+    mat: "Blonde ash, Washi paper, tatami mats, brushed wool",
+    problem: "Synthesising Scandinavian functional minimalism with the Japanese philosophy of Wabi-sabi in a sleep retreat.",
+    arch: "Low-profile platform bed floating above woven tatami, accompanied by custom floor-to-ceiling sliding Washi screen partitions that softly filter morning rays.",
+    metrics: "Autodesk Maya · 3ds Max · D5 Render · 16-bit Shaders",
+    year: "2025",
+    location: "Concept Study",
     live: "",
     behance: ""
   },
 {
-    title: "Pind Balluchi Restaurant",
-    cat: "Commercial",
-    slug: "pind-baluchi",
-    imagesCount: 8,
-    mat: "Carved teak, exposed brick, mud plaster finish, wrought iron, copper vessels",
-    problem: "Reimagining the rustic heritage village dining aesthetic into an immersive, atmospheric restaurant & bar dining space.",
-    arch: "Handcrafted timber ceiling pergolas, traditional terracotta pottery alcoves, carved wood entrance doorway, and layered 2400K warm atmospheric lighting.",
-    metrics: "Autodesk 3ds Max · AutoCAD · Lumion · 1920×1080 Widescreen",
-    year: "2023",
-    location: "Delhi NCR",
+    title: "Reading Room Alcove",
+    cat: "Other",
+    slug: "reading-room-concept",
+    imagesCount: 1,
+    mat: "American walnut, cognac saddle leather, unlacquered brass, mohair",
+    problem: "An introspective private study designed for bibliophiles, with integrated book stacks and acoustically dampened reading niches.",
+    arch: "Full-height walnut library shelving with concealed LED edge illumination, ergonomic fireside lounge chair, and sound-absorbing acoustic felt wall panels.",
+    metrics: "3ds Max · Lumion · Photometric IES Lighting",
+    year: "2024",
+    location: "Concept Study",
     live: "",
     behance: ""
-  },
-{
-    title: "Smart Dukan Retail Chain",
-    cat: "Commercial",
-    slug: "smart-dukan",
-    imagesCount: 9,
-    mat: "Acrylic solid surface, powder-coated steel, glass showcases, LED lightboxes, ACP exterior",
-    problem: "Standardized modern retail outlet store concept engineered for multi-location rollout across Delhi NCR.",
-    arch: "High-visibility retail showroom layout with central demo counters, perimeter branded display bays, and striking exterior facade with illuminated 3D signage.",
-    metrics: "Autodesk 3ds Max · AutoCAD · CorelDraw · Delhi Signage",
-    year: "2020",
-    location: "Delhi NCR",
-    live: "",
-    behance: ""
-  },
+  }
 ];
 
 // Expertise based on Ajay Kumar Ojha's Resume:
