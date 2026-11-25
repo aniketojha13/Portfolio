@@ -154,7 +154,7 @@ var P = [
   },
 {
     title: "Pahari Goat — Restaurant Concept",
-    cat: "Events",
+    cat: "Other",
     slug: "pahari-goat",
     imagesCount: 5,
     mat: "Rustic stone cladding, timber framework, corrugated metal accents, rope lighting, terracotta",
@@ -492,7 +492,7 @@ var P = [
   },
   {
     title: "Pfeiffer House — Commercial Architecture & Facade",
-    cat: "Commercial",
+    cat: "Residential",
     slug: "pfeiffer-house",
     imagesCount: 2,
     mat: "Perforated Corten steel panels, low-E double-glazed curtain wall, extruded aluminium louvers, frameless glass canopy",
