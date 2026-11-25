@@ -84,7 +84,7 @@ var P = [
   },
 {
     title: "Hitachi — Customer Family Meet",
-    cat: "Events",
+    cat: "Other",
     slug: "hitachi-customer-family-meet",
     imagesCount: 5,
     mat: "Printed backdrop panels, stage truss, LED screen, fabric drapes, floral arrangements",
@@ -140,7 +140,7 @@ var P = [
   },
 {
     title: "Noida Haat — Cultural Venue Design",
-    cat: "Events",
+    cat: "Other",
     slug: "noida-haat",
     imagesCount: 10,
     mat: "Bamboo structures, fabric canopies, terracotta tiles, LED festoon lights, timber kiosks",
@@ -226,7 +226,7 @@ var P = [
   // ── 2. Commercial & Retail Projects ──
 {
     title: "Karim's Restaurant — Kolkata",
-    cat: "Commercial",
+    cat: "Other",
     slug: "karim-kolkata",
     imagesCount: 7,
     mat: "Smoked walnut, brass fretwork, fluted columns, velvet upholstery, heritage archways",
@@ -240,7 +240,7 @@ var P = [
   },
 {
     title: "Pind Balluchi Restaurant",
-    cat: "Commercial",
+    cat: "Other",
     slug: "pind-baluchi",
     imagesCount: 8,
     mat: "Carved teak, exposed brick, mud plaster finish, wrought iron, copper vessels",
@@ -254,7 +254,7 @@ var P = [
   },
 {
     title: "Smart Dukan Retail Chain",
-    cat: "Commercial",
+    cat: "Other",
     slug: "smart-dukan",
     imagesCount: 9,
     mat: "Acrylic solid surface, powder-coated steel, glass showcases, LED lightboxes, ACP exterior",
