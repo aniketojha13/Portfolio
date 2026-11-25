@@ -13,6 +13,20 @@ var WEB3FORMS_KEY = "30d6000f-8052-492e-9921-cc05a0f0aaf8";
 var P = [
   // ── 1. Events & Exhibition Projects ──
 {
+    title: "Vivo — Exhibition Stall Design",
+    cat: "Events",
+    slug: "vivo-exhibition",
+    imagesCount: 8,
+    mat: "Curved acrylic panels, LED neon signage, product display columns, branded ACP, interactive screens",
+    problem: "Design a vibrant, youth-oriented exhibition stall for Vivo smartphones, creating an interactive brand experience at a consumer electronics expo.",
+    arch: "Sweeping curved acrylic walls in Vivo's signature blue guide visitors through a product discovery journey. Interactive touchscreens and phone-try stations maximize hands-on engagement.",
+    metrics: "3ds Max · V-Ray · Brand Experience Design",
+    year: "2025",
+    location: "India",
+    live: "",
+    behance: ""
+  },
+  {
     title: "AGI Greenpac — Exhibition Stall",
     cat: "Events",
     slug: "agi-exhibition",
@@ -107,7 +121,8 @@ var P = [
     metrics: "3ds Max · V-Ray · Product Display · Medical Expo Layout",
     year: "2025",
     location: "India",
-    live: "",
+    walkthrough: "assets/projects/meril-stall-design/walkthrough.mp4",
+    live: "assets/projects/meril-stall-design/walkthrough.mp4",
     behance: ""
   },
 {
@@ -139,6 +154,35 @@ var P = [
     behance: ""
   },
 {
+    title: "Sony — Exhibition Stall Design",
+    cat: "Events",
+    slug: "sony-exhibition",
+    imagesCount: 7,
+    mat: "High-gloss black laminates, LED video walls, product display pedestals, branded acrylic, ambient lighting",
+    problem: "Create a sleek, tech-forward exhibition stall for Sony, showcasing their consumer electronics and entertainment product ecosystem at a premium trade expo.",
+    arch: "A monolithic black-and-silver pavilion with large LED screens streaming product content. Individual product experience zones with controlled lighting let visitors interact with featured devices.",
+    metrics: "3ds Max · V-Ray · Premium Brand Stall Design",
+    year: "2025",
+    location: "India",
+    walkthrough: "assets/projects/sony-exhibition/walkthrough.mp4",
+    live: "assets/projects/sony-exhibition/walkthrough.mp4",
+    behance: ""
+  },
+{
+    title: "Surajkund — Wedding Event Staging",
+    cat: "Events",
+    slug: "surajkund-shadi-event",
+    imagesCount: 7,
+    mat: "Floral installations, fabric drapes, LED string lights, stage truss, printed backdrops, lounge furniture",
+    problem: "Design grand wedding event staging and décor visualization for a destination wedding venue near the Surajkund International Crafts Mela grounds.",
+    arch: "A cascading floral mandap serves as the ceremony centrepiece, flanked by draped fabric columns and LED string-light canopies. The reception stage features layered printed backdrops with warm uplighting.",
+    metrics: "3ds Max · V-Ray · Event & Wedding Stage Design",
+    year: "2025",
+    location: "Surajkund, Haryana",
+    live: "",
+    behance: ""
+  },  
+{
     title: "Noida Haat — Cultural Venue Design",
     cat: "Events",
     slug: "noida-haat",
@@ -163,7 +207,8 @@ var P = [
     metrics: "3ds Max · V-Ray · Restaurant Interior Visualization",
     year: "2025",
     location: "New Delhi",
-    live: "",
+    walkthrough: "assets/projects/pahari-goat/walkthrough.mp4",
+    live: "assets/projects/pahari-goat/walkthrough.mp4",
     behance: ""
   },
 {
@@ -180,48 +225,8 @@ var P = [
     live: "",
     behance: ""
   },
-{
-    title: "Sony — Exhibition Stall Design",
-    cat: "Events",
-    slug: "sony-exhibition",
-    imagesCount: 7,
-    mat: "High-gloss black laminates, LED video walls, product display pedestals, branded acrylic, ambient lighting",
-    problem: "Create a sleek, tech-forward exhibition stall for Sony, showcasing their consumer electronics and entertainment product ecosystem at a premium trade expo.",
-    arch: "A monolithic black-and-silver pavilion with large LED screens streaming product content. Individual product experience zones with controlled lighting let visitors interact with featured devices.",
-    metrics: "3ds Max · V-Ray · Premium Brand Stall Design",
-    year: "2025",
-    location: "India",
-    live: "",
-    behance: ""
-  },
-{
-    title: "Surajkund — Wedding Event Staging",
-    cat: "Events",
-    slug: "surajkund-shadi-event",
-    imagesCount: 7,
-    mat: "Floral installations, fabric drapes, LED string lights, stage truss, printed backdrops, lounge furniture",
-    problem: "Design grand wedding event staging and décor visualization for a destination wedding venue near the Surajkund International Crafts Mela grounds.",
-    arch: "A cascading floral mandap serves as the ceremony centrepiece, flanked by draped fabric columns and LED string-light canopies. The reception stage features layered printed backdrops with warm uplighting.",
-    metrics: "3ds Max · V-Ray · Event & Wedding Stage Design",
-    year: "2025",
-    location: "Surajkund, Haryana",
-    live: "",
-    behance: ""
-  },
-{
-    title: "Vivo — Exhibition Stall Design",
-    cat: "Events",
-    slug: "vivo-exhibition",
-    imagesCount: 8,
-    mat: "Curved acrylic panels, LED neon signage, product display columns, branded ACP, interactive screens",
-    problem: "Design a vibrant, youth-oriented exhibition stall for Vivo smartphones, creating an interactive brand experience at a consumer electronics expo.",
-    arch: "Sweeping curved acrylic walls in Vivo's signature blue guide visitors through a product discovery journey. Interactive touchscreens and phone-try stations maximize hands-on engagement.",
-    metrics: "3ds Max · V-Ray · Brand Experience Design",
-    year: "2025",
-    location: "India",
-    live: "",
-    behance: ""
-  },
+
+
 
   // ── 2. Commercial & Retail Projects ──
 {

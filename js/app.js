@@ -498,6 +498,12 @@
       }
     });
 
+    // Close on backdrop click
+    var navBackdrop = $("#mobileNavBackdrop");
+    if (navBackdrop) {
+      navBackdrop.addEventListener("click", closeMobileNav);
+    }
+
     // Auto-close if resized to desktop layout
     window.addEventListener("resize", function () {
       if (window.innerWidth > 880 && navMenu.classList.contains("mobile-open")) {
@@ -507,16 +513,25 @@
   }
 
   // --------------------------------------------------------------------------
-  // 4B. Header Elevation on Scroll
+  // 4B. Header Elevation on Scroll & Dynamic Header Height
   // --------------------------------------------------------------------------
   var mainHeader = $("#mainHeader");
+  function updateHeaderHeight() {
+    if (mainHeader) {
+      document.documentElement.style.setProperty("--header-height", mainHeader.offsetHeight + "px");
+    }
+  }
+
   function updateHeaderScroll() {
     if (!mainHeader) return;
     var isScrolled = window.pageYOffset > 20;
     mainHeader.classList.toggle("scrolled", isScrolled);
+    updateHeaderHeight();
   }
   window.addEventListener("scroll", updateHeaderScroll, { passive: true });
+  window.addEventListener("resize", updateHeaderHeight, { passive: true });
   updateHeaderScroll();
+  updateHeaderHeight();
 
   // --------------------------------------------------------------------------
   // 5. High-End Editorial Architectural Artwork Fallbacks (Clean & Minimal)
@@ -657,10 +672,14 @@
     if (grid) {
       grid.innerHTML = list.map(function (p) {
         var numIdx = (p.i + 1 < 10 ? "0" : "") + (p.i + 1);
+        var vdoBadge = p.walkthrough
+          ? '<span class="pc-vdo-badge" title="Watch 3D Walkthrough Video"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg> Walkthrough</span>'
+          : '';
         return (
           '<div class="pc" role="button" tabindex="0" data-i="' + p.i + '" aria-label="View project details: ' + p.title + '">' +
             '<span class="ph">' +
               '<span class="pc-badge">' + p.cat + '</span>' +
+              vdoBadge +
               '<img alt="" loading="lazy" src="assets/projects/' + p.slug + '/01.' + EXT + '" onerror="fb(this,' + p.i + ')">' +
             '</span>' +
             '<div class="pc-info">' +
@@ -681,9 +700,12 @@
   }
 
   // --------------------------------------------------------------------------
-  // 7. Lightbox Gallery Dialog
+  // 7. Lightbox Gallery Dialog & Walkthrough Video Player
   // --------------------------------------------------------------------------
   var dlg = $("#dlg");
+  var modalVideo = $("#modalVideo");
+  var galVideoWrap = $("#galVideoWrap");
+  var vdoToggleBtn = $("#vdoToggleBtn");
   var currentProject = null;
   var currentSlide = 0;
   var timer = null;
@@ -715,10 +737,70 @@
     if (url) el.href = url;
   }
 
+  function switchToVideo(autoPlay) {
+    if (!currentProject || !currentProject.walkthrough) return;
+    stopSlideshow();
+    var gal = $("#gal");
+    if (gal) gal.style.display = "none";
+    if (galVideoWrap) galVideoWrap.style.display = "flex";
+    if (vdoToggleBtn) {
+      vdoToggleBtn.classList.add("active");
+      vdoToggleBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/></svg> <span>View Stills</span>';
+    }
+    var cnt = $("#cnt");
+    if (cnt) cnt.textContent = "3D Walkthrough";
+
+    if (modalVideo) {
+      if (!modalVideo.src.endsWith(currentProject.walkthrough)) {
+        modalVideo.src = currentProject.walkthrough;
+        modalVideo.load();
+      }
+      if (autoPlay) {
+        modalVideo.play().catch(function () {});
+      }
+    }
+  }
+
+  function switchToGallery() {
+    var gal = $("#gal");
+    if (modalVideo) modalVideo.pause();
+    if (galVideoWrap) galVideoWrap.style.display = "none";
+    if (gal) gal.style.display = "";
+    if (vdoToggleBtn) {
+      vdoToggleBtn.classList.remove("active");
+      vdoToggleBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> <span>Walkthrough</span>';
+    }
+    showSlide(currentSlide);
+    startSlideshow();
+  }
+
+  function toggleVideoGallery() {
+    var isVideoActive = galVideoWrap && galVideoWrap.style.display !== "none";
+    if (isVideoActive) {
+      switchToGallery();
+    } else {
+      switchToVideo(true);
+    }
+  }
+
+  if (vdoToggleBtn) {
+    vdoToggleBtn.addEventListener("click", toggleVideoGallery);
+  }
+
   function openProject(index) {
     currentProject = P[index];
     currentSlide = 0;
     isPaused = false;
+
+    // Reset video state
+    if (modalVideo) {
+      modalVideo.pause();
+      modalVideo.removeAttribute("src");
+      modalVideo.load();
+    }
+    if (galVideoWrap) galVideoWrap.style.display = "none";
+    var gal = $("#gal");
+    if (gal) gal.style.display = "";
 
     var pzBtn = $("#pz");
     if (pzBtn) {
@@ -736,7 +818,36 @@
     $("#me").textContent = currentProject.metrics;
     $("#stack").textContent = currentProject.mat;
 
-    setLink("#lv", currentProject.live);
+    // Configure Walkthrough button & link
+    var lvBtn = $("#lv");
+    if (currentProject.walkthrough) {
+      if (vdoToggleBtn) {
+        vdoToggleBtn.style.display = "inline-flex";
+        vdoToggleBtn.classList.remove("active");
+        vdoToggleBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> <span>Walkthrough</span>';
+      }
+      if (lvBtn) {
+        lvBtn.hidden = false;
+        lvBtn.removeAttribute("target");
+        lvBtn.removeAttribute("rel");
+        lvBtn.href = "#walkthrough";
+        lvBtn.innerHTML = 'Watch 3D Walkthrough ▶';
+        lvBtn.onclick = function (e) {
+          e.preventDefault();
+          switchToVideo(true);
+        };
+      }
+    } else {
+      if (vdoToggleBtn) vdoToggleBtn.style.display = "none";
+      if (lvBtn) {
+        lvBtn.onclick = null;
+        lvBtn.target = "_blank";
+        lvBtn.rel = "noopener";
+        setLink("#lv", currentProject.live);
+        lvBtn.textContent = "Interactive Walkthrough ↗";
+      }
+    }
+
     setLink("#gh", currentProject.behance || BEHANCE);
 
     var lkWrap = $("#lk");
@@ -745,7 +856,6 @@
     }
 
     // Render gallery images with fallback based on project's imagesCount
-    var gal = $("#gal");
     var totalSlides = currentProject.imagesCount || 4;
     var html = "";
     for (var n = 1; n <= totalSlides; n++) {
@@ -769,6 +879,16 @@
   }
 
   function showSlide(index) {
+    if (galVideoWrap && galVideoWrap.style.display !== "none") {
+      if (modalVideo) modalVideo.pause();
+      galVideoWrap.style.display = "none";
+      var galEl = $("#gal");
+      if (galEl) galEl.style.display = "";
+      if (vdoToggleBtn) {
+        vdoToggleBtn.classList.remove("active");
+        vdoToggleBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> <span>Walkthrough</span>';
+      }
+    }
     var gal = $("#gal");
     if (!gal) return;
     var images = gal.children;
@@ -877,6 +997,14 @@
   if (dlg) {
     dlg.addEventListener("close", function () {
       stopSlideshow();
+      if (modalVideo) {
+        modalVideo.pause();
+        modalVideo.removeAttribute("src");
+        modalVideo.load();
+      }
+      if (galVideoWrap) galVideoWrap.style.display = "none";
+      var galEl = $("#gal");
+      if (galEl) galEl.style.display = "";
       document.body.classList.remove("modal-open");
     });
     dlg.addEventListener("click", function (e) {
@@ -1001,7 +1129,7 @@
   // --------------------------------------------------------------------------
   // 10. Contact Details, Copy Email & Form Handling
   // --------------------------------------------------------------------------
-  var targetEmail = typeof EMAIL !== "undefined" ? EMAIL : "aniketojha1308@gmail.com";
+  var targetEmail = typeof EMAIL !== "undefined" ? EMAIL : "ajayojha16@gmail.com";
   var targetPhone = typeof PHONE !== "undefined" ? PHONE : "+91-8802820881";
 
   var emailLink = $("#emailLink");
