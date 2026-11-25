@@ -1196,23 +1196,6 @@ if (contactForm) {
     });
   }
 
-  // Header Desktop "Let's Talk" CTA
-  var headerCtaBtn = $("#headerCtaBtn");
-  if (headerCtaBtn) {
-    headerCtaBtn.addEventListener("click", function () {
-      openContactPanel();
-    });
-  }
-
-  // Mobile Drawer "Start a Project Consultation" CTA
-  var mobileDrawerContact = $("#mobileDrawerContact");
-  if (mobileDrawerContact) {
-    mobileDrawerContact.addEventListener("click", function () {
-      closeMobileNav();
-      openContactPanel();
-    });
-  }
-
   // Initial render of projects
   renderProjects();
 
